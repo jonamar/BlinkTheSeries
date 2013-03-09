@@ -1,104 +1,85 @@
-<?php
-	$str_browser_language = !empty($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? strtok(strip_tags($_SERVER['HTTP_ACCEPT_LANGUAGE']), ',') : '';
-	$str_browser_language = !empty($_GET['language']) ? $_GET['language'] : $str_browser_language;
-	switch (substr($str_browser_language, 0,2))
-	{
-		case 'de':
-			$str_language = 'de';
-			break;
-		case 'en':
-			$str_language = 'en';
-			break;
-		default:
-			$str_language = 'en';
-	}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
 
-	$arr_available_languages = array();
-	$arr_available_languages[] = array('str_name' => 'English', 'str_token' => 'en');
-	$arr_available_languages[] = array('str_name' => 'Deutsch', 'str_token' => 'de');
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
 
-	$str_available_languages = (string) '';
-	foreach ($arr_available_languages as $arr_language)
-	{
-		if ($arr_language['str_token'] !== $str_language)
-		{
-			$str_available_languages .= '<a href="'.strip_tags($_SERVER['PHP_SELF']).'?language='.$arr_language['str_token'].'" lang="'.$arr_language['str_token'].'" xml:lang="'.$arr_language['str_token'].'" hreflang="'.$arr_language['str_token'].'">'.$arr_language['str_name'].'</a> | ';
-		}
-	}
-	$str_available_languages = substr($str_available_languages, 0, -3);
-?>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head lang="<?php echo $str_language; ?>" xml:lang="<?php echo $str_language; ?>">
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title>MAMP PRO - manage your websites locally</title>
-	<style type="text/css">
-		body {
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: .9em;
-			color: #000000;
-			background-color: #FFFFFF;
-			margin: 0;
-			padding: 10px 20px 20px 20px;
-		}
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">h1.title</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                        <li><a href="#">nav ul li a</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
 
-		samp {
-			font-size: 1.3em;
-		}
+        <div class="main-container">
+            <div class="main wrapper clearfix">
 
-		a {
-			color: #000000;
-			background-color: #FFFFFF;
-		}
-		
-		sup a {
-			text-decoration: none;
-		}
+                <article>
+                    <header>
+                        <h1>article header h1</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+                    </header>
+                    <section>
+                        <h2>article section h2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    </section>
+                    <section>
+                        <h2>article section h2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    </section>
+                    <footer>
+                        <h3>article footer h3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+                    </footer>
+                </article>
 
-		hr {
-			margin-left: 90px;
-		    height: 1px;
-		    color: #000000;
-			background-color: #000000;
-		    border: none;
-		}
+                <aside>
+                    <h3>aside</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+                </aside>
 
-		#logo {
-			margin-bottom: 10px;
-		}
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
 
-		.text {
-			width: 80%;
-			margin-left: 90px;
-			line-height: 140%;
-		}
-	</style>
-</head>
+        <div class="footer-container">
+            <footer class="wrapper">
+                <h3>footer</h3>
+            </footer>
+        </div>
 
-<body>
-	<p><img src="MAMP-PRO-Logo.gif" id="logo" alt="MAMP PRO - manage your websites locally" width="250" height="76" /></p>
-	<?php if ($str_language == 'de'): ?>
-		<p class="text"><strong>Der virtuelle <span lang="en" xml:lang="en">Host</span> wurde erfolgreich eingerichtet.</strong></p>
-		<p class="text">Wenn Sie diese Seite sehen, dann bedeutet dies, dass der neue virtuelle <span lang="en" xml:lang="en">Host</span> erfolgreich eingerichtet wurde. Jetzt muss noch der richtige <span lang="en" xml:lang="en">Web</span>-Inhalt hinzugefügt und diese Platzhalter-Seite<sup><a href="#footnote_1">1</a></sup> ersetzt <abbr title="beziehungsweise">bzw.</abbr> gelöscht werden.</p>
-		<p class="text">
-			Server-Name: <samp><?php echo $_SERVER['SERVER_NAME']; ?></samp><br />
-			Document-Root: <samp><?php echo $_SERVER['DOCUMENT_ROOT']; ?></samp>
-		</p>
-		<p class="text" id="footnote_1"><small><sup>1</sup> Dateien: <samp>index.php</samp> und <samp>MAMP-PRO-Logo.gif</samp></small></p>
-		<hr />
-		<p class="text">Diese Seite in: <?php echo $str_available_languages; ?></p>
-	<?php elseif ($str_language == 'en'): ?>
-		<p class="text"><strong>The virtual host was set up successfully.</strong></p>
-		<p class="text">If you can see this page, your new virtual host was set up successfully. Now, web contents can be added and this placeholder page<sup><a href="#footnote_1">1</a></sup> should be replaced or deleted.</p>
-		<p class="text">
-			Server name: <samp><?php echo $_SERVER['SERVER_NAME']; ?></samp><br />
-			Document-Root: <samp><?php echo $_SERVER['DOCUMENT_ROOT']; ?></samp>
-		</p>
-		<p class="text" id="footnote_1"><small><sup>1</sup> Files: <samp>index.php</samp> and <samp>MAMP-PRO-Logo.gif</samp></small></p>
-		<hr />
-		<p class="text">This page in: <?php echo $str_available_languages; ?></p>
-	<?php endif; ?>
-</body>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
 </html>
