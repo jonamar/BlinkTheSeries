@@ -1,1 +1,35 @@
-h1 {color: teal !important;}
+h1 {color: rgba(244,208,29,1);}
+
+
+body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
+
+
+
+.wrapper {
+//@include clearfix; 
+
+margin: 23px auto; 
+width: 80%;
+max-width: 900px; 
+height: 1000px; 
+box-shadow: -5px 0px 25px black; 
+border-radius: 1px;
+
+padding: 23px 2% 0 7% ; 
+
+background: #dbdbdb;
+background: -moz-linear-gradient(left, #dbdbdb 0%, #f9f9f9 2%, #dbdbdb 4%, #dbdbdb 5%, #868686 6%, #dbdbdb 7%, #ffffff 9%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#dbdbdb), color-stop(2%,#f9f9f9), color-stop(4%,#dbdbdb), color-stop(5%,#dbdbdb), color-stop(6%,#868686), color-stop(7%,#dbdbdb), color-stop(9%,#ffffff));
+background: -webkit-linear-gradient(left, #dbdbdb 0%,#f9f9f9 2%,#dbdbdb 4%,#dbdbdb 5%,#868686 6%,#dbdbdb 7%,#ffffff 9%);
+background: -o-linear-gradient(left, #dbdbdb 0%,#f9f9f9 2%,#dbdbdb 4%,#dbdbdb 5%,#868686 6%,#dbdbdb 7%,#ffffff 9%);
+background: -ms-linear-gradient(left, #dbdbdb 0%,#f9f9f9 2%,#dbdbdb 4%,#dbdbdb 5%,#868686 6%,#dbdbdb 7%,#ffffff 9%);
+background: linear-gradient(to right, #dbdbdb 0%,#f9f9f9 2%,#dbdbdb 4%,#dbdbdb 5%,#868686 6%,#dbdbdb 7%,#ffffff 9%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbdbdb', endColorstr='#ffffff',GradientType=1 );
+// close: http://www.colorzilla.com/gradient-editor/#ededed+0,f9f9f9+2,ededed+4,ededed+5,969696+6,ededed+7,ffffff+9;Custom
+// try to recreate the above using a bourbon mixin (http://bourbon.io/docs/#linear-gradient-function): 
+// @include linear-gradient(50deg, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+// then try to subsitute the colors for equations based on universal colors (e.g. 5% lighter than page color, etc). 
+}
+
+
+/* .wrapper {background: white; width: 800px; margin: 0 auto; height: 1000px;} */

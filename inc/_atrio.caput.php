@@ -11,9 +11,16 @@
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" type="image/png" href="/favicon.png">
         
-        <link rel="stylesheet" href="css/compiled.css">
+				<script type="text/javascript" src="//use.typekit.net/pud8uci.js"></script>
+				<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+        <!-- $DEV: baseline grid overlay -->
+        <link rel="stylesheet" href="http://basehold.it/23">
+        
+        <link rel="stylesheet" href="css/compiled.css">
+        
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        
     </head>
     <body>
         <!--[if lt IE 7]>

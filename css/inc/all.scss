@@ -1,8 +1,16 @@
-@import "1.normalize";
-@import "2.h5bp";
-@import "3.1.typography";
-@import "3.2.grid";
-@import "3.9.working";
-@import "4.media";
-@import "5.helper";
-@import "6.print";
+@import "bourbon";
+
+@import "_1.normalize.scss";
+
+@import "_2.h5bp.scss";
+
+@import "_3.1.typography.scss";
+@import "_3.2.grid.scss";
+@import "_3.9.working.scss";
+
+@import "_4.media.scss";
+
+@import "_5.helper.scss";
+
+@import "_6.print.scss";
+
