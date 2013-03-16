@@ -1,16 +1,18 @@
+@import "vars.scss";
+
 @import "bourbon";
 
-@import "_1.normalize.scss";
+@import "normalize.scss";
 
-@import "_2.h5bp.scss";
+@import "h5bp.scss";
 
-@import "_3.1.typography.scss";
-@import "_3.2.grid.scss";
-@import "_3.9.working.scss";
+@import "typography.scss";
+@import "grid.scss";
+@import "working.scss";
 
-@import "_4.media.scss";
+@import "media.scss";
 
-@import "_5.helper.scss";
+@import "helper.scss";
 
-@import "_6.print.scss";
+@import "print.scss";
 

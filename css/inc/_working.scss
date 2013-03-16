@@ -1,0 +1,67 @@
+h1 {color: rgba(244,208,29,1);}
+
+
+body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
+
+
+
+.wrapper {
+	//@include clearfix; 
+	
+	margin: 23px auto; 
+	width: 80%;
+	max-width: 900px; 
+	height: 1000px; 
+	box-shadow: -5px 0px 25px black;
+	border-radius: 1px;
+	padding: 23px 23px 0; 
+	
+	background: url('../img/credits-bg-test2.jpg') no-repeat center center;; 
+	background-size: cover;
+	position: relative;
+	}
+
+
+.wrapper:before {
+	content: '';
+	width: 30px; 
+	height: 1023px;
+	position: absolute;
+	margin-left: -53px;
+	background: yellow;
+	display: block;
+	top: 0;
+
+	@include linear-gradient(
+		left,
+			darken(desaturate($paper, 40%), 40%) 		 0%, 
+			$paper 																 	40%, 
+			$paper 																	60%, 
+			darken(desaturate($paper, 40%), 30%) 	 	85%,
+			darken(desaturate($paper, 40%), 70%) 	 	98%,
+			darken($paper, 100%) 									 100%
+			);
+			
+	box-shadow: -5px 0px 25px black;
+	}
+	
+		
+	.g1, .g2, .g3 {		
+		position: relative;
+		
+		border: 3px solid black;
+		background: white;
+		}
+
+
+	img {width: 100%;}
+	
+	p {margin: 20px;}
+	
+	
+/*
+	$paper
+	
+	lighten($color, $amount)
+	darken($color, $amount)
+*/

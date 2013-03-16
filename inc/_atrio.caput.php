@@ -15,7 +15,7 @@
 				<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
         <!-- $DEV: baseline grid overlay -->
-        <link rel="stylesheet" href="http://basehold.it/23">
+<!--         <link rel="stylesheet" href="http://basehold.it/23"> -->
         
         <link rel="stylesheet" href="css/compiled.css">
         
