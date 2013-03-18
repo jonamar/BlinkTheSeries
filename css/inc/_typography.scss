@@ -7,7 +7,9 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {margin: 0 0 23px;}
 
-h1, h2, h3, h4, h5, h6		{font-family: "badaboom-pro"; font-style: italic;}
+h1, h2, h3								{font-family: "badaboom-pro"; font-style: italic;}
+
+h4, h5, h6, strong 				{font-weight:700; font-style: italic;}
 
 h1 {
     font-size: 42px;
@@ -22,3 +24,4 @@ h2 {
     font-size: 23px;
     }
 
+h4 {color: $color-brand_two; margin: -13px 0 10px;}

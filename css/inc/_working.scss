@@ -1,67 +1,113 @@
-h1 {color: rgba(244,208,29,1);}
+h1 {color: $color-brand_main;}
+
+a {color: $color-black;}
 
 
 body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
-
-
-.wrapper {
-	//@include clearfix; 
-	
+.wrapper {	
 	margin: 23px auto; 
 	width: 80%;
 	max-width: 900px; 
-	height: 1000px; 
-	box-shadow: -5px 0px 25px black;
+	height: 1500px; 
+	box-shadow: -5px 0px 25px $color-black;
 	border-radius: 1px;
 	padding: 23px 23px 0; 
 	
+	
 	background: url('../img/credits-bg-test2.jpg') no-repeat center center;; 
 	background-size: cover;
+	
 	position: relative;
 	}
 
 
 .wrapper:before {
 	content: '';
-	width: 30px; 
-	height: 1023px;
+	width: 30px;
+	height: 1523px;
 	position: absolute;
 	margin-left: -53px;
-	background: yellow;
 	display: block;
 	top: 0;
 
 	@include linear-gradient(
 		left,
-			darken(desaturate($paper, 40%), 40%) 		 0%, 
-			$paper 																 	40%, 
-			$paper 																	60%, 
-			darken(desaturate($paper, 40%), 30%) 	 	85%,
-			darken(desaturate($paper, 40%), 70%) 	 	98%,
-			darken($paper, 100%) 									 100%
+			darken(desaturate($color-paper, 40%), 40%) 		 0%, 
+			$color-paper 																 	40%, 
+			$color-paper 																	60%, 
+			darken(desaturate($color-paper, 40%), 30%) 	 	85%,
+			darken(desaturate($color-paper, 40%), 70%) 	 	98%,
+			darken($color-paper, 100%) 									 100%
 			);
 			
-	box-shadow: -5px 0px 25px black;
+	box-shadow: -5px 0px 25px $color-black;
 	}
-	
+
+
+.logo {height: 230px; margin-bottom: 23px;}	
 		
 	.g1, .g2, .g3 {		
-		position: relative;
-		
-		border: 3px solid black;
-		background: white;
 		}
+
+	.comic_panel {
+		border: $border;
+		position: relative;
+		margin-bottom: 23px;
+		}
+		
+	.comic_caption {
+		padding: 20px;
+		background: $color-caption;
+		}
+		.comic_caption :last-child {margin-bottom: 0;}
+		
 
 
 	img {width: 100%;}
+
 	
-	p {margin: 20px;}
-	
+
+		
+
+// helpers
+	.border-top 		{border-top: 		$border;}
+	.border-right 	{border-right: 	$border;}
+	.border-bottom 	{border-bottom: $border;}
+	.border-left 		{border-left: 	$border;}
+
 	
 /*
-	$paper
-	
-	lighten($color, $amount)
-	darken($color, $amount)
+	.thought,
+	.thought:before,
+	.thought:after {
+		position: absolute;
+		border: $border; 
+		background: $color-caption; 
+		border-radius: 100px;		
+		}
+
+	.thought {
+		width: 120px; 
+		padding: 20px; 
+		text-align: center;
+		}
+		
+	.thought-left 	{top: 205px; left: -225px;}
+	.thought-right 	{top: -15px; right: -225px;}
+		
+		.thought:before,
+		.thought:after {
+			content: '';
+			display: block;
+			width: 10px; height: 10px;
+			}
+			.thought-right:before, 
+			.thought-left:before {padding: 10px}
+			
+			.thought-left:before {top: 20px; right: -20px;}
+			.thought-left:after  {top: 10px; right: -40px;}
+
+			.thought-right:before {top: 60px; left: -20px;}
+			.thought-right:after  {top: 60px; left: -40px;}
 */
