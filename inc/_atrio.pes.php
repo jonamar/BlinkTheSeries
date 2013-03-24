@@ -1,7 +1,22 @@
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
         <script src="js/compiled.js"></script>
+        
+        <script>
+				$(document).ready(function(){
+				    function changeText(id, text){
+				        $("#sequence ul li:nth-child("+id+")").children().children(".sequence-class").text(text);
+				    }
+				
+				    var options = {
+				        autoPlayDelay: 1000
+				        }
+				
+				    var sequence = $("#sequence").sequence(options).data("sequence"); //initiate Sequence
+				
+				});
+        </script>
+       
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
