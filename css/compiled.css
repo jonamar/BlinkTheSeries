@@ -525,6 +525,80 @@ h4 {
   color: #ea0b0c;
   margin: -13px 0 10px; }
 
+@font-face {
+  font-family: 'icons';
+  src: url("../font/icons.eot?33831221");
+  src: url("../font/icons.eot?33831221#iefix") format("embedded-opentype"), url("../font/icons.woff?33831221") format("woff"), url("../font/icons.ttf?33831221") format("truetype"), url("../font/icons.svg?33831221#icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'icons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity .8 */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - magrins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  font-size: 32px; }
+
+.icon-youtube:before {
+  content: '\55'; }
+
+.icon-twitter-squared:before {
+  content: '\f304'; }
+
+.icon-facebook-squared:before {
+  content: '\f308'; }
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  float: right;
+  background: #f7f5f0;
+  padding: 14px 23px 9px 0;
+  border: 3px solid black;
+  margin-bottom: 23px; }
+
+nav li {
+  display: inline-block;
+  margin-left: 23px;
+  vertical-align: middle; }
+
+nav a {
+  text-decoration: none;
+  font-family: "badaboom-pro";
+  font-style: italic;
+  font-size: 23px;
+  letter-spacing: 1px;
+  -webkit-transition-duration: 0.75s;
+  -moz-transition-duration: 0.75s;
+  -o-transition-duration: 0.75s;
+  -ms-transition-duration: 0.75s;
+  transition-duration: 0.75s; }
+
+nav a:hover {
+  text-shadow: -2px 1px 0 #fada31;
+  color: #ea0b0c;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  transition-duration: 0s; }
+
 h1 {
   color: #fada31; }
 
@@ -643,84 +717,170 @@ img {
 			.thought-right:before {top: 60px; left: -20px;}
 			.thought-right:after  {top: 60px; left: -40px;}
 */
-/*
-Theme created for use with Sequence.js (http://www.sequencejs.com/)
-
-Theme: Documentation Demo
-Version: 1.0
-Theme Author: Ian Lunn @IanLunn
-Author URL: http://www.ianlunn.co.uk/
-Theme URL: http://www.sequencejs.com/themes/documentation-demo/
-
-This is a FREE theme and is available under a MIT License:
-http://www.opensource.org/licenses/mit-license.php
-
-Sequence.js and its dependencies are (c) Ian Lunn Design 2013 unless otherwise stated.
-
-/* THEME STYLES */
 .sequence {
   border: black solid 3px;
-  height: 370px;
+  height: 345px;
   margin: 10px auto;
   position: relative;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
-  /* prevent graphical glitches in WebKit browsers when using transitions */
-  /* Frame Animations */
-  /* !Frame Animations */ }
+  /* prevent graphical glitches in WebKit browsers when using transitions */ }
+
+.sequence ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
 #sequence > ul li > * {
   position: absolute;
-  /* required */ }
+  /* required */
+  display: block; }
 
 .sequence #sequence-preloader {
   background: white; }
 
-.sequence .class-name {
-  font-size: 0.8em; }
+.sequence .animate-in .panel1,
+.sequence .animate-out .panel1 {
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -o-transition-duration: 3s;
+  -ms-transition-duration: 3s;
+  transition-duration: 3s; }
 
-.sequence .info1, .sequence .info2, .sequence .info3 {
-  background: #3f7ad6;
+.sequence .panel1 {
+  right: -300px;
+  bottom: -300px; }
+
+.sequence .animate-in .panel1 {
+  right: -10px;
+  bottom: -10px; }
+
+.sequence .animate-out .panel1 {
+  right: -10px;
+  bottom: -10px; }
+
+.sequence .panel1 .e1-annie {
+  height: 100%; }
+
+.sequence .animate-in .panel2,
+.sequence .animate-out .panel2 {
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
+  -ms-transition-duration: 1.5s;
+  transition-duration: 1.5s; }
+
+.sequence .panel2 {
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2; }
+
+.sequence .animate-in .panel2 {
+  opacity: 1; }
+
+.sequence .animate-out .panel2 {
+  opacity: 0.2; }
+
+/* v2 */
+.e1 {
+  border: 3px solid black;
+  height: 345px;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  /* prevent graphical glitches in WebKit browsers when using transitions */ }
+
+.e1 .e1-annie,
+.e1 .e1-blink,
+.e1 .caption,
+.e1 .watch {
+  position: absolute; }
+
+.e1 .e1-annie, .e1:hover .e1-annie {
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -o-transition-duration: 3s;
+  -ms-transition-duration: 3s;
+  transition-duration: 3s; }
+
+.e1 .e1-annie {
+  z-index: 1;
+  width: auto;
+  height: 500px;
+  right: -140px;
+  bottom: -40px; }
+
+.e1:hover .e1-annie {
+  bottom: -150px; }
+
+.e1,
+e1:hover,
+.e1 .e1-blink,
+.e1:hover .e1-blink {
+  -webkit-transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
+  -ms-transition-duration: 1.5s;
+  transition-duration: 1.5s; }
+
+.e1 .e1-blink {
+  z-index: 2;
+  opacity: .1;
+  width: 100%;
+  height: 100%;
+  background: black; }
+
+.e1:hover .e1-blink {
+  opacity: 1; }
+
+.e1 {
+  background: transparent; }
+
+.e1:hover {
+  background: black; }
+
+.e1 .caption {
+  z-index: 10;
+  padding: 12px 12px 11px;
+  border: 3px solid black;
+  margin: 23px;
+  background: #fff9b7;
+  width: 25%;
+  text-align: center; }
+
+.e1 .watch,
+.e1 .watch:hover {
+  z-index: 11;
+  font-size: 18px;
+  line-height: 23px;
+  border: 3px solid black;
+  background: black;
+  padding: 23px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
   color: white;
-  height: 95px;
-  padding: 5px;
-  width: 95px; }
-
-.sequence .info1 {
-  left: -150px;
-  top: 10px; }
-
-.sequence .info2 {
-  left: -150px;
-  top: 130px; }
-
-.sequence .info3 {
-  left: -150px;
-  top: 250px; }
-
-.sequence .animate-in .info1,
-.sequence .animate-in .info2,
-.sequence .animate-in .info3 {
-  left: 10%;
+  top: 40%;
+  margin: 0;
+  left: 35%;
+  height: auto;
   display: block;
-  opacity: 1;
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  -ms-transition-duration: 1s;
-  transition-duration: 1s; }
+  width: 30%;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
 
-.sequence .animate-out .info1, .sequence .animate-out .info2, .sequence .animate-out .info3 {
-  left: 100%;
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  -ms-transition-duration: 1s;
-  transition-duration: 1s; }
+.e1:hover .watch {
+  border-color: white; }
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
+.e1 .watch:hover {
+  background: white;
+  color: black; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

@@ -9,7 +9,8 @@
 				    }
 				
 				    var options = {
-				        autoPlayDelay: 1000
+				        autoPlayDelay: 500,
+				        pauseOnHover: false
 				        }
 				
 				    var sequence = $("#sequence").sequence(options).data("sequence"); //initiate Sequence

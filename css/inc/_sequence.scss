@@ -1,76 +1,94 @@
-/*
-Theme created for use with Sequence.js (http://www.sequencejs.com/)
-
-Theme: Documentation Demo
-Version: 1.0
-Theme Author: Ian Lunn @IanLunn
-Author URL: http://www.ianlunn.co.uk/
-Theme URL: http://www.sequencejs.com/themes/documentation-demo/
-
-This is a FREE theme and is available under a MIT License:
-http://www.opensource.org/licenses/mit-license.php
-
-Sequence.js and its dependencies are (c) Ian Lunn Design 2013 unless otherwise stated.
-
-/* THEME STYLES */
 .sequence {
   border: black solid 3px;
-  height: 370px;
+  height: 345px;
   margin: 10px auto;
   position: relative;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  /* prevent graphical glitches in WebKit browsers when using transitions */
-  /* Frame Animations */
-  /* !Frame Animations */
+  -webkit-backface-visibility: hidden;/* prevent graphical glitches in WebKit browsers when using transitions */
 }
 
-#sequence > ul li > * {
-    position: absolute; /* required */
+.sequence ul {margin: 0; padding: 0; list-style: none;}
+
+#sequence > ul li > * {position: absolute; /* required */ display: block;}
+
+.sequence #sequence-preloader {background: white;}
+
+
+	.sequence .animate-in .panel1, 
+	.sequence .animate-out .panel1 {@include prefixer(transition-duration, 3s, webkit moz o ms spec);}
+
+	.sequence .panel1 								{right: -300px; bottom: -300px;}
+		.sequence .animate-in .panel1 	{right: -10px; 	bottom: -10px;}
+		.sequence .animate-out .panel1 	{right: -10px; 	bottom: -10px;}
+			
+			.sequence .panel1 .e1-annie {height: 100%;}
+	
+	
+	.sequence .animate-in .panel2, 
+	.sequence .animate-out .panel2 {@include prefixer(transition-duration, 1.5s, webkit moz o ms spec);}
+
+	.sequence .panel2 {
+		background: black;
+	  width: 100%; height: 100%;
+	  opacity: 0.2
+	  }	
+		.sequence .animate-in .panel2 {opacity: 1;}
+			.sequence .animate-out .panel2 {opacity: 0.2;}
+
+
+/* v2 */
+.e1 {
+  border: $border;
+  height: 345px;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;/* prevent graphical glitches in WebKit browsers when using transitions */
 }
 
-.sequence #sequence-preloader {
-  background: white;
-}
-.sequence .class-name {
-  font-size: 0.8em;
-}
-.sequence .info1, .sequence .info2, .sequence .info3 {
-  background: #3f7ad6;
-  color: white;
-  height: 95px;
-  padding: 5px;
-  width: 95px;
-}
-.sequence .info1 {
-  left: -150px;
-  top: 10px;
-}
-.sequence .info2 {
-  left: -150px;
-  top: 130px;
-}
-.sequence .info3 {
-  left: -150px;
-  top: 250px;
-}
-.sequence .animate-in .info1, 
-.sequence .animate-in .info2, 
-.sequence .animate-in .info3 {
-  left: 10%;
-  display: block;
-  opacity: 1;
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  -ms-transition-duration: 1s;
-  transition-duration: 1s;
-}
-.sequence .animate-out .info1, .sequence .animate-out .info2, .sequence .animate-out .info3 {
-  left: 100%;
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  -ms-transition-duration: 1s;
-  transition-duration: 1s;
-}
+.e1 .e1-annie,
+.e1 .e1-blink,
+.e1 .caption,
+.e1 .watch {position: absolute;}
+
+.e1 .e1-annie, .e1:hover .e1-annie {@include prefixer(transition-duration, 3s, webkit moz o ms spec);}
+
+	.e1 .e1-annie 				{z-index: 1; width: auto; height: 500px; right: -140px; bottom: -40px;}
+		.e1:hover .e1-annie {bottom: -150px;}
+
+
+.e1, 
+e1:hover,
+.e1 .e1-blink, 
+.e1:hover .e1-blink {@include prefixer(transition-duration, 1.5s, webkit moz o ms spec);}
+	
+	.e1 .e1-blink {z-index: 2; opacity: .1; width: 100%; height: 100%; background: black;}
+		.e1:hover .e1-blink {opacity: 1;}
+
+	.e1 {background: transparent;}
+		.e1:hover {background: black;}
+
+
+.e1 .caption {z-index: 10; padding: 12px 12px 11px; border: 3px solid black; margin: 23px; background: #fff9b7; width: 25%; text-align: center;}
+
+
+.e1 .watch, 
+.e1 .watch:hover{
+	z-index: 11;
+	font-size: 18px; line-height: 23px;
+	border: 3px solid black; 
+	background: black; 
+	padding: 23px 0; 
+	border-radius: 10px; 
+	text-decoration: none; 
+	text-align: center;
+	color: white;
+	top: 40%; margin: 0;
+	left: 35%;
+	height: auto;
+	display: block;
+	width: 30%;
+	@include prefixer(transition-duration, 0.5s, webkit moz o ms spec);
+	}
+	.e1:hover .watch {border-color: white;}
+	.e1 .watch:hover {background: white; color: black;}

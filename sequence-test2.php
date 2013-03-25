@@ -9,18 +9,12 @@
 	<div id="sequence" class="g-all sequence">
 		<ul>
 			<li>
-				<div class="info1">
-					<p class="class">.info1</p>
+				<div class="panel1">
+					<img src="img/e1-annie.png" alt="Psy Vamp" />
 				</div>
 			</li>
 			<li>
-				<div class="info2">
-					<p class="class">.info2</p>
-				</div>
-			</li>
-			<li>
-				<div class="info3">
-					<p class="class">.info3</p>
+				<div class="panel2">
 				</div>
 			</li>
 		</ul>

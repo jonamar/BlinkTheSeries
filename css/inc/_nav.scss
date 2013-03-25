@@ -1,0 +1,26 @@
+nav ul {
+	padding: 0; margin: 0; 
+	float: right; 
+	background: $color-paper; 
+	padding: 14px 23px 9px 0; 
+	border: $border;
+	margin-bottom: 23px;
+	}
+
+nav li {display: inline-block; margin-left: 23px; vertical-align: middle;}
+
+nav a {
+	text-decoration: none; 
+
+	font-family: "badaboom-pro"; font-style: italic; 
+	font-size: 23px;
+	letter-spacing: 1px; 
+
+	@include prefixer(transition-duration, .75s, webkit moz o ms spec);
+	}
+	nav a:hover {
+		text-shadow: -2px 1px 0 $color-brand_main; 
+		color: $color-brand_two; 
+
+		@include prefixer(transition-duration, 0s, webkit moz o ms spec);
+		}
