@@ -1,18 +1,21 @@
 nav ul {
 	padding: 0; margin: 0; 
 	float: right; 
-	background: $color-paper; 
-	padding: 14px 23px 9px 0; 
-	border: $border;
-	margin-bottom: 23px;
+	padding: 14px $base 9px 0; 
 	}
+	@include max-screen($tablet)  { nav ul {margin: $base auto; width: auto; float: none; text-align: center;} }
+
+	nav ul br {display: none;}
+		@include max-screen($phone)  { nav ul br {display: inline;} }
+
 
 nav li {display: inline-block; margin-left: 23px; vertical-align: middle;}
+		@include max-screen($phone)  { nav ul li {margin: 10px 0 10px 23px;} }
 
 nav a {
 	text-decoration: none; 
 
-	font-family: "badaboom-pro"; font-style: italic; 
+	font-family: "badaboom-pro"; font-style: italic;
 	font-size: 23px;
 	letter-spacing: 1px; 
 

@@ -1,11 +1,15 @@
 // Measurements
 $base: 23px;
 
+	// Breakpoints
+	$desktop: 940px;
+	$tablet: 768px;
+	$phone: 480px;
+
 // Colors
 $color-paper: 	#f7f5f0;
 $color-black: 	black;
-$color-caption: $color-paper;
-// $color-caption: #fbf9ad;
+$color-caption: #fff9b7;
 
 	// Brand
 	$color-brand_main: 	#fada31;

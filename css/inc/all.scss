@@ -1,20 +1,40 @@
+// All variables
 @import "vars.scss";
-@import "bourbon";
 
+// Plugins
+@import "bourbon";
+@import "media-queries.scss";
+
+// Boilerplate
 @import "normalize.scss";
 @import "h5bp.scss";
 
+	// Core Styling
+	@import "common.scss";
+	@import "typography.scss";
+	@import "icons.scss";
+	@import "grid.scss";
+	
 
-@import "typography.scss";
-@import "icons.scss";
-@import "grid.scss";
+	
+	// Objects
+	@import "nav.scss";
+	@import "comic-elements.scss";
+	
+	// Page Specific Styles
+	@import "pages.scss";
 
-@import "nav.scss";
+	// Drafts
+	@import "working.scss";
+	@import "sequence.scss";
+	
 
-@import "working.scss";
-@import "sequence.scss";
+	// Plugins
+	@import "color-box.scss";
+	//@import "reveal.scss";
 
-
+// Boilerplate cont'd
 @import "helper.scss";
 @import "print.scss";
+
 

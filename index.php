@@ -1,78 +1,23 @@
 <?php include 'inc/_atrio.caput.php' ?>
+<?php include 'inc/_corpus.caput.php' ?>
 
 
-<div class="wrapper noise">
+<div class="test"></div>
 
-	<div class="g1">
-		<img alt="Blink The Series" class="logo" src="img/Blink-the-Series.svg" />
+	<div class="g-all t-all m1 e1 panel">
+			<p class="caption">Birds are chirping. It's early morning and the start of a beautiful summer day in Berlin.</p>
+			<div class="false-border-bottom"></div>
+			<img class="e1-annie" src="img/e1-annie.png" alt="Psy Vamp" />
+			<div class="false-border-top"></div>
+			<div class="e1-blink"></div>
+			
+			<a class='play youtube' href="http://www.youtube.com/embed/k9prm5BjrUU?rel=0&amp;wmode=transparent">&#9658; Watch Episode 1</a>
 	</div>
 
-	<hgroup class="g2-g3">
-		<h1>Credits</h1>	
-		<h2>Filled with intrigue!!</h2>
-	</hgroup>
-	
+	<div class="l1 t-all m1 e2 panel">
+			<p class="caption">Watch Episode Two<br/>NEXT WEDNESDAY<br/>April 3rd</p>
+			<p class="caption">Who was the mysterious woman in the window and will Jon ever find his pants? Tune in next week for answers to these any many more questions on Blink The Series !!</p>
+	</div>	
 
-		<div class="g1 t1 m1 comic_panel"> 
-			<img alt="" src="img/people/rachael.jpg"/>
-			<div class="comic_caption border-top">
-				<h2>Rachael Newport</h2>
-				<h4>DP, Camera, Writer E3 & 4, Story</h4>
-				<p>Malachi Rempen makes <a href="http://www.mmrempen.com">movies</a>, a weekly <a href="http://www.itchyfeetcomic.com">web comic</a>, and enjoys changes in temperature and color. Observant passers-by will notice him wandering around Berlin, deep in thought.</p>
-			</div>
-		</div>
-
-		<div class="g2 t2 m1 comic_panel"> 
-			<img alt="" src="img/people/malachi.jpg"/>
-			<div class="comic_caption border-top">
-				<h2>Malachi Rempen</h2>
-				<h4>Director: E3, 56, Sound Assistant</h4>
-				<p>Malachi Rempen makes <a href="http://www.mmrempen.com">movies</a>, a weekly <a href="http://www.itchyfeetcomic.com">web comic</a>, and enjoys changes in temperature and color. Observant passers-by will notice him wandering around Berlin, deep in thought.</p>
-			</div>
-		</div>
-
-
-		<div class="g3 t1 m1 comic_panel"> 
-			<img alt="" src="img/people/christine.jpg"/>
-			<div class="comic_caption border-top">
-				<h2>Christine Utterberg</h2>
-				<h4>DP, Camera, Writer E3 & 4, Story</h4>
-				<p>Malachi Rempen makes <a href="http://www.mmrempen.com">movies</a>, a weekly <a href="http://www.itchyfeetcomic.com">web comic</a>, and enjoys changes in temperature and color. Observant passers-by will notice him wandering around Berlin, deep in thought.</p>
-			</div>
-		</div>
-
-
-		<div class="g1 t2 m1 comic_panel"> 
-			<img alt="" src="img/people/david-m.jpg"/>
-			<div class="comic_caption border-top">
-				<h2>David Masterson</h2>
-				<h4>Actor: Crow</h4>
-				<p>Malachi Rempen makes <a href="http://www.mmrempen.com">movies</a>, a weekly <a href="http://www.itchyfeetcomic.com">web comic</a>, and enjoys changes in temperature and color. Observant passers-by will notice him wandering around Berlin, deep in thought.</p>
-			</div>
-		</div>
-
-		<div class="g2 t1 m1 comic_panel"> 
-			<img alt="" src="img/people/andrew.jpg"/>
-			<div class="comic_caption border-top">
-				<h2>Andrew James</h2>
-				<h4>DP, Camera, Writer E3 & 4, Story</h4>
-				<p>Malachi Rempen makes <a href="http://www.mmrempen.com">movies</a>, a weekly <a href="http://www.itchyfeetcomic.com">web comic</a>, and enjoys changes in temperature and color. Observant passers-by will notice him wandering around Berlin, deep in thought.</p>
-			</div>
-		</div>
-
-
-		<div class="g3 t2 m1 comic_panel"> 
-			<img alt="" src="img/people/rachael.jpg"/>
-			<div class="comic_caption border-top">
-				<h2>Christine Utterberg</h2>
-				<h4>DP, Camera, Writer E3 & 4, Story</h4>
-				<p>Malachi Rempen makes <a href="http://www.mmrempen.com">movies</a>, a weekly <a href="http://www.itchyfeetcomic.com">web comic</a>, and enjoys changes in temperature and color. Observant passers-by will notice him wandering around Berlin, deep in thought.</p>
-			</div>
-		</div>
-		
-		<div style="clear:both;"></div>
-
-</div>
-
-
+<?php include 'inc/_corpus.pes.php' ?>
 <?php include 'inc/_atrio.pes.php' ?>

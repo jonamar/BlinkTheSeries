@@ -1,5 +1,5 @@
 .sequence {
-  border: black solid 3px;
+  border: $border;
   height: 345px;
   margin: 10px auto;
   position: relative;
@@ -38,57 +38,77 @@
 
 /* v2 */
 .e1 {
-  border: $border;
-  height: 345px;
-  margin: 10px auto;
   position: relative;
   overflow: hidden;
+  height: 345px;
+  background: transparent;
   -webkit-backface-visibility: hidden;/* prevent graphical glitches in WebKit browsers when using transitions */
-}
+  margin-top: -50px;
+  }
 
-.e1 .e1-annie,
-.e1 .e1-blink,
-.e1 .caption,
-.e1 .watch {position: absolute;}
-
-.e1 .e1-annie, .e1:hover .e1-annie {@include prefixer(transition-duration, 3s, webkit moz o ms spec);}
-
-	.e1 .e1-annie 				{z-index: 1; width: auto; height: 500px; right: -140px; bottom: -40px;}
-		.e1:hover .e1-annie {bottom: -150px;}
-
-
-.e1, 
-e1:hover,
-.e1 .e1-blink, 
-.e1:hover .e1-blink {@include prefixer(transition-duration, 1.5s, webkit moz o ms spec);}
+	.e1 .e1-annie,
+	.e1 .e1-blink,
+	.e1 .caption,
+	.e1 .play {position: absolute;}
 	
-	.e1 .e1-blink {z-index: 2; opacity: .1; width: 100%; height: 100%; background: black;}
-		.e1:hover .e1-blink {opacity: 1;}
+	.e1 .e1-annie, 
+	.e1:hover .e1-annie {@include prefixer(transition-duration, 3s, webkit moz o ms spec);}
+	
+		.e1 .e1-annie 			{z-index: 10; width: auto; height: 420px; right: -60px; bottom: 0px;}
+		.e1:hover .e1-annie {bottom: -100px;}
+	
+	
+	.e1 .e1-blink, 
+	.e1:hover .e1-blink {@include prefixer(transition-duration, 1.5s, webkit moz o ms spec);}
+		
+		.e1 .e1-blink {z-index: 20; opacity: 0; width: 100%; height: 370px; top: 50px; background: black;}
+			.e1:hover .e1-blink {opacity: 1;}
+	
+	
+	.e1 .caption {z-index: 30; width: 25%; margin-top: 73px;}
+	
+	
+	.e1 .play, 
+	.e1 .play:hover{
+		z-index: 40;
+		font-size: 18px; line-height: 23px;
+		border: $border; 
+		background: black; 
+		padding: 23px 2%; 
+		border-radius: 10px; 
+		text-decoration: none; 
+		text-align: center;
+		color: white;
+		top: 200px; margin: 0;
+		left: 33%;
+		height: auto;
+		display: block;
+		width: 30%;
+		@include prefixer(transition-duration, 0.5s, webkit moz o ms spec);
+		}
+		.e1:hover .play {border-color: white;}
+		.e1 .play:hover {background: white; color: black;}
+		
 
-	.e1 {background: transparent;}
-		.e1:hover {background: black;}
+.e1 {border: none; height: 420px;}
 
-
-.e1 .caption {z-index: 10; padding: 12px 12px 11px; border: 3px solid black; margin: 23px; background: #fff9b7; width: 25%; text-align: center;}
-
-
-.e1 .watch, 
-.e1 .watch:hover{
-	z-index: 11;
-	font-size: 18px; line-height: 23px;
-	border: 3px solid black; 
-	background: black; 
-	padding: 23px 0; 
-	border-radius: 10px; 
-	text-decoration: none; 
-	text-align: center;
-	color: white;
-	top: 40%; margin: 0;
-	left: 35%;
-	height: auto;
+.e1 .false-border-top {
+	position: absolute;
 	display: block;
-	width: 30%;
-	@include prefixer(transition-duration, 0.5s, webkit moz o ms spec);
+	border: $border;
+	box-sizing: border-box;
+	width: 100%;
+	height: 370px; top: 50px;
+	z-index: 5;
 	}
-	.e1:hover .watch {border-color: white;}
-	.e1 .watch:hover {background: white; color: black;}
+
+.e1 .false-border-bottom {
+	position: absolute;
+	display: block;
+	border: $border;
+	border-top: none;
+	box-sizing: border-box;
+	width: 100%;
+	height: 370px; top: 50px;
+	z-index: 15;
+	}
