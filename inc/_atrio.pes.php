@@ -1,21 +1,53 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   
     <!-- color box -->	
+<!--
     <script src="http://gsa.blinktheseries.dev/js/jquery.colorbox-min.js"></script>
 		<script>
 			$(document).ready(function(){
 				$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344, returnFocus:false, width: "50%"});
 			});
 		</script>
+-->
 		
+<!--
     <script src="js/jquery.fitvids.min.js"></script>       
-
 			<script>
 			  $(document).ready(function(){
 			    // Target your .container, .wrapper, .post, etc.
 			    $("#testDiv").fitVids();
 			  });
 			</script>
+-->
+
+	<!-- Add fancyBox main JS -->
+	<script type="text/javascript" src="/source/jquery.fancybox.js?v=2.1.4"></script>
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			/*
+			 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+			*/
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'fade',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none', 
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+
+		});
+	</script>
 		
 		
     <script src="js/compiled.js"></script>       

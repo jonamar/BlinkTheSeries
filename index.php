@@ -11,7 +11,8 @@
 			<div class="false-border-top"></div>
 			<div class="e1-blink"></div>
 			
-			<a class='play youtube' href="http://www.youtube.com/embed/k9prm5BjrUU?rel=0&amp;wmode=transparent">&#9658; Watch Episode 1</a>
+			<a class='play fancybox-media' href="http://www.youtube.com/embed/k9prm5BjrUU?rel=0&amp;wmode=transparent">&#9658; Watch Episode 1</a>
+<!-- 			<a class="fancybox-media" href="http://www.youtube.com/watch?v=opj24KnzrWo">Youtube</a> -->
 	</div>
 
 	<div class="l1 t-all m1 e2 panel">
