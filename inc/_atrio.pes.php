@@ -21,9 +21,9 @@
 -->
 
 	<!-- Add fancyBox main JS -->
-	<script type="text/javascript" src="/source/jquery.fancybox.js?v=2.1.4"></script>
+	<script type="text/javascript" src="/js/jquery.fancybox.pack.js"></script>
 	<!-- Add Media helper (this is optional) -->
-	<script type="text/javascript" src="/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+	<script type="text/javascript" src="/js/jquery.fancybox-media.js?v=1.0.5"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -42,7 +42,6 @@
 					arrows : false,
 					helpers : {
 						media : {},
-						buttons : {}
 					}
 				});
 
