@@ -9,3 +9,5 @@
 .credits .wrapper {
 	background: $color-brand_two;
 }
+
+.credits .credits {color: $color-gray; box-shadow: none; cursor: default; pointer-events: none;}

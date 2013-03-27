@@ -1,0 +1,18 @@
+.play, 
+.play:hover{
+	font-size: 18px; line-height: 23px;
+	border: $border; 
+	background: black; 
+	padding: 23px 2%; 
+	border-radius: 10px; 
+	text-decoration: none; 
+	text-align: center;
+	color: white;
+	height: auto;
+	display: block;
+	@include prefixer(transition-duration, 0.5s, webkit moz o ms spec);
+	}
+
+	.play small {
+		display: block;
+		}

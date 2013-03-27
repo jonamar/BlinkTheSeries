@@ -12,7 +12,7 @@
 	</div>
 
 	<div class="l1 t-all m1 e2 panel">
-			<p class="caption">Watch Episode Two<br/>NEXT WEDNESDAY<br/>April 3rd</p>
+			<p class="play"><small>Watch Episode Two</small> NEXT WEDNESDAY <small>April 3rd</small></p>
 			<p class="caption">Who was the mysterious woman in the window and will Jon ever find his pants? Tune in next week for answers to these any many more questions on Blink The Series !!</p>
 	</div>
 

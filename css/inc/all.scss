@@ -10,28 +10,24 @@
 @import "h5bp.scss";
 
 	// Core Styling
-	@import "common.scss";
+	@import "wrapper.scss";
 	@import "typography.scss";
 	@import "icons.scss";
 	@import "grid.scss";
 	
-
-	
 	// Objects
 	@import "nav.scss";
 	@import "comic-elements.scss";
+	@import "buttons.scss";
 	
 	// Page Specific Styles
 	@import "pages.scss";
 
-	// Drafts
-	@import "working.scss";
-	@import "sequence.scss";
-	
+		// Drafts
+		@import "working.scss";
+		@import "sequence.scss";
 
 	// Plugins
-	//@import "color-box.scss";
-	//@import "reveal.scss";
 	@import "fancybox.scss";
 	
 // Boilerplate cont'd
