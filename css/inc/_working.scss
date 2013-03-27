@@ -116,13 +116,14 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 		.e1 .play:hover {background: white; color: black;}
 		
 
-.e1 {border: none; height: 420px;}
+.e1 {border: none; border-bottom: $border; height: 420px;}
 
 .e1 .false-border-top, 
 .e1 .false-border-bottom {
 	position: absolute;
 	display: block;
 	border: $border;
+	border-bottom: none;
 	box-sizing: border-box;
 	width: 100%;
 	height: 370px; top: 50px;
