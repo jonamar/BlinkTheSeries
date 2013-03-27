@@ -4,7 +4,7 @@
     <script src="http://gsa.blinktheseries.dev/js/jquery.colorbox-min.js"></script>
 		<script>
 			$(document).ready(function(){
-				$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:"auto", returnFocus:false, width: "50%"});
+				$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344, returnFocus:false, width: "50%"});
 			});
 		</script>
 		
@@ -13,7 +13,7 @@
 			<script>
 			  $(document).ready(function(){
 			    // Target your .container, .wrapper, .post, etc.
-			    $(".youtube").fitVids();
+			    $("#testDiv").fitVids();
 			  });
 			</script>
 		
