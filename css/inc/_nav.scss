@@ -27,3 +27,7 @@ nav a {
 
 		@include prefixer(transition-duration, 0s, webkit moz o ms spec);
 		}
+		
+		
+nav [class^="icon-"]:before,
+nav [class*=" icon-"]:before {font-size: 32px;}

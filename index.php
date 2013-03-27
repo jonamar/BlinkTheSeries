@@ -13,7 +13,8 @@
 
 	<div class="l1 t-all m1 e2 panel">
 			<p class="play"><small>Watch Episode Two</small> NEXT WEDNESDAY <small>April 3rd</small></p>
-			<p class="caption">Who was the mysterious woman in the window and will Jon ever find his pants? Tune in next week for answers to these any many more questions on Blink The Series !!</p>
+			<p class="caption caption-1">Who is the mysterious woman in the window and will Jon ever wear pants again?</p>
+			<p class="caption caption-2">Tune in next week for answers to these, and many more, questions on <span class="type-logo"> Blink The Series</span>!!</p>
 	</div>
 
 <?php include 'inc/_corpus.pes.php' ?>

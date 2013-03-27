@@ -13,7 +13,7 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 		border: $border;
 		position: relative;
 		margin-bottom: 23px;
-		min-height: 575px;
+		min-height: $base * 26;
 		background: $color-caption;
 		}
 		
@@ -23,7 +23,8 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 		}
 		.comic_caption :last-child {margin-bottom: 0;}
 		
-
+		.comic_panel.tall  {min-height:$base * 27;}
+		.comic_panel.short {min-height:$base * 19;}
 
 	img {width: 100%;}
 
@@ -136,12 +137,24 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 /* e2 */
 
 .e2 {
-	height: $base * 10;
-	background: url('../img/e2-kat.jpg') no-repeat center left;
+	height: $base * 15;
+	background: url('../img/e2-kat2.jpg') no-repeat center left;
 	background-size: cover;
+	position: relative;
 	}
 
 .e2 .play {
-	width: 45%; margin: 23px auto;
+	width: 45%; margin: 23px;
 	padding: 12px 2% 11px;
  	}
+ 	
+.e2 .caption-1,
+.e2 .caption-2 {
+	position: absolute;
+	bottom: 0;
+	}
+	
+.e2 .caption-1 {width: 30%;}
+.e2 .caption-2 {width: 40%; right: 0;}
+
+

@@ -1,29 +1,38 @@
+/* Base */
 body {
-    font-family: "lint-mccree";
-    font-size: 10px;
-    line-height: $base;
-    color: $color-black;
-}
+  font-family: "lint-mccree";
+  font-size: 10px;
+  line-height: $base;
+  color: $color-black;
+  }
 
+/* margins */
 h1, h2, h3, h4, h5, h6, p {margin: 0 0 $base;}
 
-h1, h2, h3								{font-family: "badaboom-pro"; font-style: italic;}
 
+/* Badaboom */
+h1, h2, h3, .type-logo		{font-family: "badaboom-pro"; font-style: italic;}
+
+
+	h1 {font-size: 42px; line-height: $base * 2;}
+	
+	h2 {font-size: $base;}
+
+// NEEDS WORK
+.type-logo {
+  color: $color-brand_main;
+  text-shadow: -2px 2px 0 black;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+  font-size: 200%;
+  }
+  
+
+/* Lint McCree */
 h4, h5, h6, strong 				{font-weight:700; font-style: italic;}
 
-h1 {
-    font-size: 42px;
-    line-height: $base * 2;
-    color: #F4D01D;
-    text-shadow: -3px 3px 0 black;
-    	-webkit-text-stroke: 1px black;
-    text-stroke: 1px black;
-    }
+	h4 {color: $color-brand_two; margin: -13px 0 10px;}
 
-h2 {
-    font-size: $base;
-    }
+	small {font-size: 10px; line-height: $base;}
 
-h4 {color: $color-brand_two; margin: -13px 0 10px;}
 
-small {font-size: 10px; line-height: $base;}
