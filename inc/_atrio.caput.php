@@ -13,11 +13,12 @@
         
 				<script type="text/javascript" src="//use.typekit.net/pud8uci.js"></script>
 				<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+				
+				<!-- facebook sharing thumbnail -->
+				<link rel="image_src" href="/img/FB-logo.jpg" />
 
         <!-- $DEV: baseline grid overlay -->
         <!--  <link rel="stylesheet" href="http://basehold.it/23"> -->
-
-        <link href="https://get.gridsetapp.com/16974/" rel="stylesheet" />
 
         <link rel="stylesheet" href="css/compiled.css">
         

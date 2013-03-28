@@ -44,7 +44,5 @@
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
 
-    <!-- $DEV: Grid Set Overlay 
-    <script src="https://get.gridsetapp.com/16974/overlay/"></script>-->
     </body>
 </html>
