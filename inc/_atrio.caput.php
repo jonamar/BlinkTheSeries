@@ -16,10 +16,10 @@
 				
 				<!-- facebook open graph infos -->
 				<meta property="og:title" content="Blink The Series | A Sci-Fi Web Series" />
-				<meta property="og:type" content="video.tvshow" />
+				<meta property="og:type" content="video" />
 				<meta property="og:url" content="http://BlinkTheSeries.com" />
 				<meta property="og:video" content="http://www.youtube.com/watch?v=5SjtrUYRYx4" />
-				<meta property="og:image" content="/img/FB-logo.jpg" />
+				<meta property="og:image" content="http://blinktheseries.com/img/FB-logo.jpg" />
 				<link rel="image_src" href="/img/FB-logo.jpg" />
 
         <!-- $DEV: baseline grid overlay -->
