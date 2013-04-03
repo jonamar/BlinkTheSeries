@@ -40,11 +40,6 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 
 
-/* common */
-
-.index .panel:hover .play {border-color: $color-paper;}
-.index .panel .play:hover {background: $color-paper; color: $color-black;}
-	
 
 
 /* e1 */
@@ -105,7 +100,7 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 
 
-/* e2 - preview */
+/* e2 - live */
 
 .index .e2 {
 	height: $base * 15;
@@ -118,13 +113,36 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 		}
 
 .index .e2 .play {
-	width: 45%; margin: 23px auto;
+	width: 50%; margin: 23px auto;
 	position: relative;
 	top: $base * 10;
  	}
  
  .index .e2 .caption-1 {width: 20%; position: absolute; top:0;}
 
-/* e2 - live */
 
+/* e3 - preview */
+
+.index .e3 {
+	height: $base * 15;
+	background: url('../img/e2-jon.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+	}
+	.index .e2:hover {
+		background: url('../img/e2-jon2.png') no-repeat center center;
+		}
+
+
+/* common */
+
+.index .panel:hover .play {border-color: $color-paper;}
+.index .panel .play:hover {background: $color-paper; color: $color-black;}
+
+		@include max-screen($phone)  { 
+			.index .caption {display: none;}
+			.index .panel {overflow: hidden;}
+			.index .play {width: 100% !important; left: 0; padding: 23px 0; border-radius: 0; top: 347px;}
+			.index .panel:hover .play {border-color: $color-black;}
+			}
 
