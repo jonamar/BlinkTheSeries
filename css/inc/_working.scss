@@ -125,19 +125,18 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 .index .e3 {
 	height: $base * 15;
-	background: url('../img/e2-jon.png') no-repeat center center;
+	background: url('../img/e3-teaser.jpg') no-repeat center center;
 	background-size: cover;
 	position: relative;
 	}
-	.index .e2:hover {
-		background: url('../img/e2-jon2.png') no-repeat center center;
-		}
+	.index .e3 .caption-1 {width: 40%;}
+	.index .e3 .play {position: absolute; bottom: $base; left: 12%; width: 72%;}
 
 
 /* common */
 
-.index .panel:hover .play {border-color: $color-paper;}
-.index .panel .play:hover {background: $color-paper; color: $color-black;}
+.index .panel:hover a.play {border-color: $color-paper;}
+.index .panel a.play:hover {background: $color-paper; color: $color-black;}
 
 		@include max-screen($phone)  { 
 			.index .caption {display: none;}
