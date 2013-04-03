@@ -1,5 +1,6 @@
 // INDEX
-.index .wrapper {
+.index .wrapper,
+.week1 .wrapper {
 	background: url('../img/credits-bg-test2.jpg') no-repeat center center;
 	background-size: cover;
 	}
@@ -11,3 +12,30 @@
 }
 
 .credits .credits {color: $color-gray; box-shadow: none; cursor: default; pointer-events: none;}
+
+
+
+// ARCHIVE
+
+/* Week 1 - e2: preview */
+
+.week1 .e2 {
+	height: $base * 15;
+	background: url('../img/e2-kat.jpg') no-repeat center left;
+	background-size: cover;
+	position: relative;
+	}
+
+.week1 .e2 .play {
+	width: 45%; margin: 23px;
+	padding: 12px 2% 11px;
+ 	}
+ 	
+.week1 .e2 .caption-1,
+.week1 .e2 .caption-2 {
+	position: absolute;
+	bottom: 0;
+	}
+	
+.week1 .e2 .caption-1 {width: 30%;}
+.week1 .e2 .caption-2 {width: 40%; right: 0;}

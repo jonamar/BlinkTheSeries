@@ -38,41 +38,14 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 	.border-bottom 	{border-bottom: $border;}
 	.border-left 		{border-left: 	$border;}
 
+
+
+/* common */
+
+.index .panel:hover .play {border-color: $color-paper;}
+.index .panel .play:hover {background: $color-paper; color: $color-black;}
 	
-/*
-	.thought,
-	.thought:before,
-	.thought:after {
-		position: absolute;
-		border: $border; 
-		background: $color-caption; 
-		border-radius: 100px;		
-		}
 
-	.thought {
-		width: 120px; 
-		padding: 20px; 
-		text-align: center;
-		}
-		
-	.thought-left 	{top: 205px; left: -225px;}
-	.thought-right 	{top: -15px; right: -225px;}
-		
-		.thought:before,
-		.thought:after {
-			content: '';
-			display: block;
-			width: 10px; height: 10px;
-			}
-			.thought-right:before, 
-			.thought-left:before {padding: 10px}
-			
-			.thought-left:before {top: 20px; right: -20px;}
-			.thought-left:after  {top: 10px; right: -40px;}
-
-			.thought-right:before {top: 60px; left: -20px;}
-			.thought-right:after  {top: 60px; left: -40px;}
-*/
 
 /* e1 */
 .e1 {
@@ -90,14 +63,14 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 	.e1 .play {position: absolute;}
 	
 	.e1 .e1-annie, 
-	.e1:hover .e1-annie {@include prefixer(transition-duration, 3s, webkit moz o ms spec);}
+	.e1:hover .e1-annie {@include prefixer(transition-duration, 1s, webkit moz o ms spec);}
 	
 		.e1 .e1-annie 			{z-index: 10; width: auto; height: 420px; right: -60px; bottom: 0px;}
 		.e1:hover .e1-annie {bottom: -100px;}
 	
 	
 	.e1 .e1-blink, 
-	.e1:hover .e1-blink {@include prefixer(transition-duration, 1.5s, webkit moz o ms spec);}
+	.e1:hover .e1-blink {@include prefixer(transition-duration, 1s, webkit moz o ms spec);}
 		
 		.e1 .e1-blink {z-index: 20; opacity: 0; width: 100%; height: 370px; top: 50px; background: black;}
 			.e1:hover .e1-blink {opacity: 1;}
@@ -111,10 +84,7 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 		top: 200px; margin: 0;
 		left: 33%;
 		width: 30%;
-		}		
-		.e1:hover .play {border-color: white;}
-		.e1 .play:hover {background: white; color: black;}
-		
+		}				
 
 .e1 {border: none; border-bottom: $border; height: 420px;}
 
@@ -135,27 +105,26 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 
 
-/* e2 */
+/* e2 - preview */
 
-.e2 {
+.index .e2 {
 	height: $base * 15;
-	background: url('../img/e2-kat.jpg') no-repeat center left;
+	background: url('../img/e2-jon.png') no-repeat center center;
 	background-size: cover;
 	position: relative;
 	}
+	.index .e2:hover {
+		background: url('../img/e2-jon2.png') no-repeat center center;
+		}
 
-.e2 .play {
-	width: 45%; margin: 23px;
-	padding: 12px 2% 11px;
+.index .e2 .play {
+	width: 45%; margin: 23px auto;
+	position: relative;
+	top: $base * 10;
  	}
- 	
-.e2 .caption-1,
-.e2 .caption-2 {
-	position: absolute;
-	bottom: 0;
-	}
-	
-.e2 .caption-1 {width: 30%;}
-.e2 .caption-2 {width: 40%; right: 0;}
+ 
+ .index .e2 .caption-1 {width: 20%; position: absolute; top:0;}
+
+/* e2 - live */
 
 
