@@ -20,9 +20,13 @@
 			<p class="caption caption-1">Color me curious.</p>
 			<a class='play fancybox-media' href="http://www.youtube.com/watch?v=HoHvSaa9mzQ">&#9658; Watch Episode 3</a>
 			<div class="e3-drawing-top"></div>
+	</div><div class="clear"></div>
+	
+	<div class="r1 t-all m1 e4 panel">
+			<p class="caption caption-1">Is this is the end of the line for our unlikely hero? How much worse can his day get? Tune in next week to find out on <span class="type-logo"> Blink The Series</span>!!</p>
+			<p class="play"><small>Watch Episode Four</small> NEXT WEDNESDAY <small>April 17th</small></p>
 	</div>
-	
-	
+
 
 <?php include 'inc/_corpus.pes.php' ?>
 <?php include 'inc/_atrio.pes.php' ?>
