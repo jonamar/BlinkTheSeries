@@ -6,9 +6,6 @@ a {color: $color-black;}
 body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 		
-	.g1, .g2, .g3 {		
-		}
-
 	.comic_panel {
 		border: $border;
 		position: relative;
@@ -101,29 +98,27 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 
 /* e2 - live */
-
-.index .e2 {
+.e2 {
 	height: $base * 15;
 	background: url('../img/e2-jon.png') no-repeat center center;
 	background-size: cover;
 	position: relative;
 	}
-	.index .e2:hover {
+	.e2:hover {
 		background: url('../img/e2-jon2.png') no-repeat center center;
 		background-size: cover;
 		}
 
-.index .e2 .play {
+.e2 .play {
 	width: 50%; margin: 23px auto;
 	position: relative;
 	top: $base * 10;
  	}
  
- .index .e2 .caption-1 {width: 20%; position: absolute; top:0;}
+ .e2 .caption-1 {width: 20%; position: absolute; top:0;}
 
 
 /* e3 - preview */
-
 .index .e3 {
 	height: $base * 15;
 	background: url('../img/e3-teaser.jpg') no-repeat center center;
@@ -135,7 +130,6 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 
 /* common */
-
 .index .panel:hover a.play {border-color: $color-paper;}
 .index .panel a.play:hover {background: $color-paper; color: $color-black;}
 

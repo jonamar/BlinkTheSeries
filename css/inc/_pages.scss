@@ -1,6 +1,7 @@
 // INDEX
 .index .wrapper,
-.week1 .wrapper {
+.week1 .wrapper,
+.week2 .wrapper {
 	background: url('../img/credits-bg-test2.jpg') no-repeat center center;
 	background-size: cover;
 	}
@@ -39,3 +40,15 @@
 	
 .week1 .e2 .caption-1 {width: 30%;}
 .week1 .e2 .caption-2 {width: 40%; right: 0;}
+
+/* Week 2 - e3: preview */
+
+.week2 .e3 {
+	height: $base * 15;
+	background: url('../img/e3-teaser.jpg') no-repeat center center;
+	background-size: cover;
+	position: relative;
+	}
+	.week2 .e3 .caption-1 {width: 40%;}
+	.week2 .e3 .play {position: absolute; bottom: $base; left: 12%; width: 72%;}
+
