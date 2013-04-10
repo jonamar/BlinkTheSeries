@@ -130,8 +130,8 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 
 /* common */
-.index .panel:hover a.play {border-color: $color-paper;}
-.index .panel a.play:hover {background: $color-paper; color: $color-black;}
+.panel:hover a.play {border-color: $color-paper;}
+.panel a.play:hover {background: $color-paper; color: $color-black;}
 
 		@include max-screen($phone)  { 
 			.index .caption {display: none;}
