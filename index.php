@@ -23,7 +23,12 @@
 	</div><div class="clear"></div>
 	
 	<div class="r1 t-all m1 e4 panel">
-			<p class="caption caption-1">Is this is the end of the line for our unlikely hero? How much worse can his day get? Tune in next week to find out on <span class="type-logo"> Blink The Series</span>!!</p>
+			<p class="caption caption-1">Uh oh...</p>
+			<a class='play fancybox-media' href="http://www.youtube.com/watch?v=y88FW8Bea_U">&#9658; Watch Episode 4</a>
+	</div>
+	
+	<div class="r2 t-all m1 e5 panel">
+			<p class="caption caption-1">Who's this hoodlum? And what happened to Jon? Tune in next week to find out on <span class="type-logo"> Blink The Series</span>!!</p>
 			<p class="play"><small>Watch Episode Four</small> NEXT WEDNESDAY <small>April 17th</small></p>
 	</div>
 

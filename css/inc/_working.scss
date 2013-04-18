@@ -115,7 +115,7 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 	top: $base * 10;
  	}
  
- .e2 .caption-1 {width: 20%; position: absolute; top:0;}
+ .e2 .caption {width: 20%; position: absolute; top:0;}
 
 
 /* e3 - live */
@@ -135,46 +135,33 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 		@include prefixer(transition-duration, 2s, webkit moz o ms spec);
 		}
 		.e3:hover .e3-drawing-top {opacity: 0;}
-	.e3 .caption-1 {position: relative; z-index: 10; width: 40%;}
+	.e3 .caption {position: relative; z-index: 10; width: 40%;}
 	.e3 .play {position: absolute; z-index: 10; bottom: $base; left: 12%; width: 72%;}
 
 
-/* e4 - preview */ 
+/* e4 - live */ 
 .e4 {
 	position: relative;
 	height: $base * 15;
-	background: url('../img/e4-teaser.jpg') no-repeat center center;
+	background: url('../img/e4-kat.jpg') no-repeat center center;
 	background-size: cover;
 	}
-	.e4 .play {
-		position: absolute; 
-		bottom: $base; 
-		margin: 0; 
-		left: 12%; 
-		width: 72%; 
-		color: $color-black; 
-		background: $color-paper; 
-		border-radius: 200px;
-		}
-		.e4 .play:before,
-		.e4 .play:after {
-			content: '';
-			display: block; 
-			position: absolute; 
-			border: $border; 
-			background: $color-paper;
-			border-radius: 100px;
-			}
-			.e4 .play:before {
-				width: $base; height: $base;
-				top: -5px;
-				right: -5px;
-				}
-			.e4 .play:after {
-				width: $base / 2; height: $base / 2;
-				top: -20px;
-				right: -10px;
-				}
+	.e4:hover {background: url('../img/e4-jon.jpg') no-repeat center center; background-size: cover;}
+	.e4 .caption {position: absolute; right: 0;}
+	.e4 .play {position: absolute; z-index: 10; bottom: $base; left: 12%; width: 72%;}
+
+
+/* e5 - teaser */
+
+.e5 {
+	position: relative;
+	height: $base * 15;
+	background: url('../img/e5-teaser.jpg') no-repeat center center;
+	background-size: cover;
+	}
+	.e5 .caption {position: absolute; width: 20%; z-index: 10}
+	.e5 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
+
 
 /* common */
 .panel:hover a.play {border-color: $color-paper;}
