@@ -17,7 +17,7 @@
 	</div>
 
 	<div class="l2 t-all m1 e3 panel">
-			<p class="caption caption-1">Color me curious.</p>
+			<p class="caption caption-1">Color me curious!</p>
 			<a class='play fancybox-media' href="http://www.youtube.com/watch?v=HoHvSaa9mzQ">&#9658; Watch Episode 3</a>
 			<div class="e3-drawing-top"></div>
 	</div><div class="clear"></div>
