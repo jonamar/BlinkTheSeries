@@ -2,7 +2,8 @@
 .index .wrapper,
 .week1 .wrapper,
 .week2 .wrapper,
-.week3 .wrapper {
+.week3 .wrapper,
+.week4 .wrapper {
 	background: url('../img/credits-bg-test2.jpg') no-repeat center center;
 	background-size: cover;
 	}
@@ -87,4 +88,12 @@
 				top: -20px;
 				right: -10px;
 				}
+
+/* Week 4 - e5: preview */
+.week4 .e5 {
+	background: url('../img/e5-teaser.jpg') no-repeat center center;
+	background-size: cover;
+	}
+	.week4 .e5 .caption {position: absolute; width: 20%; z-index: 10}
+	.week4 .e5 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
 

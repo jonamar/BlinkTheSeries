@@ -28,15 +28,8 @@
 	</div>
 	
 	<div class="r2 t-all m1 e5 panel">
-			<p class="caption caption-1">Wheeeeee!</p> 
-			<a class='play fancybox-media' href="http://www.youtube.com/watch?v=hgIW0_4WX-w">&#9658; Watch Episode 5</a>
-		<div class="zoom"></div>
-		<div class="overlay"></div>
-	</div>
-
-	<div class="l1 t-all m1 e6 panel">
-			<p class="caption caption-1">Drama drama next week on <span class="type-logo"> Blink The Series</span>!!</p>
-			<p class="play"><small>Watch Episode Six</small> NEXT WEDNESDAY <small>May 1st</small></p>
+			<p class="caption caption-1">Who's this hoodlum? And what happened to Jon? Tune in next week to find out on <span class="type-logo"> Blink The Series</span>!!</p>
+			<p class="play"><small>Watch Episode Five</small> NEXT WEDNESDAY <small>April 17th</small></p>
 	</div>
 
 

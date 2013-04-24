@@ -151,17 +151,62 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 	.e4 .play {position: absolute; z-index: 10; bottom: $base; left: 12%; width: 72%;}
 
 
-/* e5 - teaser */
+/* e5 - live */
 
 .e5 {
 	position: relative;
 	height: $base * 15;
-	background: url('../img/e5-teaser.jpg') no-repeat center center;
+	background: url('../img/e5-liveB.jpg') no-repeat center center;
 	background-size: cover;
 	}
-	.e5 .caption {position: absolute; width: 20%; z-index: 10}
-	.e5 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
+	.e5 .caption {position: absolute; width: 20%; z-index: 150}
+	.e5 .play {position: absolute; z-index: 160; bottom: $base; left: $base; width: 40%;}
 
+	.e5 .zoom,
+	.e5 .overlay {
+		width: 100%;
+		height: $base * 15;
+		position: absolute; 
+		top: 0;
+		@include prefixer(transition-duration, 1s, webkit moz o ms spec);
+		}
+		
+	.e5 .zoom {
+    opacity: 0;
+
+		background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(0,0,0,1) 13%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 38%, rgba(255,255,255,1) 52%, rgba(0,0,0,1) 65%, rgba(198,198,198,1) 79%, rgba(255,255,255,0) 83%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(13%,rgba(0,0,0,1)), color-stop(25%,rgba(255,255,255,1)), color-stop(38%,rgba(0,0,0,1)), color-stop(52%,rgba(255,255,255,1)), color-stop(65%,rgba(0,0,0,1)), color-stop(79%,rgba(198,198,198,1)), color-stop(83%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(0,0,0,1) 13%,rgba(255,255,255,1) 25%,rgba(0,0,0,1) 38%,rgba(255,255,255,1) 52%,rgba(0,0,0,1) 65%,rgba(198,198,198,1) 79%,rgba(255,255,255,0) 83%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(0,0,0,1) 13%,rgba(255,255,255,1) 25%,rgba(0,0,0,1) 38%,rgba(255,255,255,1) 52%,rgba(0,0,0,1) 65%,rgba(198,198,198,1) 79%,rgba(255,255,255,0) 83%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(0,0,0,1) 13%,rgba(255,255,255,1) 25%,rgba(0,0,0,1) 38%,rgba(255,255,255,1) 52%,rgba(0,0,0,1) 65%,rgba(198,198,198,1) 79%,rgba(255,255,255,0) 83%); /* IE10+ */
+		background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(0,0,0,1) 13%,rgba(255,255,255,1) 25%,rgba(0,0,0,1) 38%,rgba(255,255,255,1) 52%,rgba(0,0,0,1) 65%,rgba(198,198,198,1) 79%,rgba(255,255,255,0) 83%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
+		background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 1000% 100%;  
+      
+    }
+    .e5:hover .zoom {opacity: 1; background-position: right center;}
+
+	.e5 .overlay {
+		z-index: 50;
+		background: url('../img/e5-liveA.jpg') no-repeat center center;
+		background-size: cover;
+		}
+		.e5:hover .overlay {opacity: 0;}
+
+
+/* e6 - teaser */
+
+.e6 {	
+	position: relative;
+	height: $base * 15;
+	background: url('../img/e6-teaser.jpg') no-repeat center center;
+	background-size: cover;
+	}
+	.e6 .caption {position: absolute; width: 20%; z-index: 10}
+	.e6 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
 
 /* common */
 .panel:hover a.play {border-color: $color-paper;}
