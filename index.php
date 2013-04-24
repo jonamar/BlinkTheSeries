@@ -28,7 +28,7 @@
 	</div>
 	
 	<div class="r2 t-all m1 e5 panel">
-			<p class="caption caption-1">Wheeeeee!</p> 
+			<p class="caption caption-1">Out of the frying pan into the fire!</p> 
 			<a class='play fancybox-media' href="http://www.youtube.com/watch?v=hgIW0_4WX-w">&#9658; Watch Episode 5</a>
 		<div class="zoom"></div>
 		<div class="overlay"></div>
