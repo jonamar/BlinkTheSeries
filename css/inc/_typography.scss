@@ -1,6 +1,6 @@
 /* Base */
 body {
-  font-family: "lint-mccree";
+  font-family: "lint-mccree", "comic sans ms", sans-serif;
   font-size: 10px;
   line-height: $base;
   color: $color-black;
@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6, p {margin: 0 0 $base;}
 
 
 /* Badaboom */
-h1, h2, h3, .type-logo		{font-family: "badaboom-pro"; font-style: italic;}
+h1, h2, h3, .type-logo		{font-family: "badaboom-pro", impact, sans-serif; font-style: italic;}
 
 
 	h1 {font-size: 42px; line-height: $base * 2;}
