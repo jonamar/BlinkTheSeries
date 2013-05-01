@@ -35,14 +35,10 @@
 	</div>
 
 	<div class="l1 t-all m1 e6 panel">
-			<p class="bubble">Isn't that a bit extreme?</p>
-			<a class='play fancybox-media' href="http://www.youtube.com/watch?v=SZkkPzqEiHg">&#9658; Watch Episode 6</a>
+			<p class="caption caption-1">Drama drama next week on <span class="type-logo"> Blink The Series</span>!!</p>
+			<p class="play"><small>Watch Episode Six</small> NEXT WEDNESDAY <small>May 1st</small></p>
 	</div>
 
-	<div class="l2 t-all m1 e7 panel">
-			<p class="caption caption-1">From resignation to revelations, next week on <span class="type-logo"> Blink The Series</span>.</p>
-			<p class="play"><small>Watch Episode Seven</small> NEXT WEDNESDAY <small>May 8th</small></p>
-	</div>
 
 <?php include 'inc/_corpus.pes.php' ?>
 <?php include 'inc/_atrio.pes.php' ?>

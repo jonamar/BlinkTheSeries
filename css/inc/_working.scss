@@ -36,17 +36,32 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 	.border-left 		{border-left: 	$border;}
 
 
+/* common */
+.panel {
+	position: relative; 
+	height: $base * 15; 
+  -webkit-backface-visibility: hidden;/* prevent graphical glitches in WebKit browsers when using transitions */
+	}
+
+	.panel:hover a.play {border-color: $color-paper;}
+	.panel a.play:hover {background: $color-paper; color: $color-black;}
+	
+			@include max-screen($phone)  { 
+				.index .caption {display: none;}
+				.index .panel {overflow: hidden;}
+				.index .play {width: 100% !important; left: 0; padding: 23px 0; border-radius: 0; top: 347px;}
+				.index .panel:hover .play {border-color: $color-black;}
+				}
+
 
 
 
 /* e1 */
 .e1 {
-  position: relative;
   overflow: hidden;
-  height: 345px;
   background: transparent;
-  -webkit-backface-visibility: hidden;/* prevent graphical glitches in WebKit browsers when using transitions */
   margin-top: -50px;
+  border: none; border-bottom: $border; height: 420px;
   }
 
 	.e1 .e1-annie,
@@ -78,8 +93,6 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 		width: 30%;
 		}				
 
-.e1 {border: none; border-bottom: $border; height: 420px;}
-
 .e1 .false-border-top, 
 .e1 .false-border-bottom {
 	position: absolute;
@@ -99,14 +112,10 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 /* e2 - live */
 .e2 {
-	height: $base * 15;
 	background: url('../img/e2-jon.png') no-repeat center center;
-	background-size: cover;
-	position: relative;
 	}
 	.e2:hover {
 		background: url('../img/e2-jon2.png') no-repeat center center;
-		background-size: cover;
 		}
 
 .e2 .play {
@@ -120,10 +129,7 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 /* e3 - live */
 .e3 {
-	height: $base * 15;
 	background: url('../img/e3-drawing-bottom.jpg') no-repeat center center;
-	background-size: cover;
-	position: relative;
 	}
 	.e3-drawing-top {
 		position: absolute;
@@ -131,7 +137,6 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 		z-index: 5;
 		top: 0;
 		background: url('../img/e3-drawing-top.jpg') no-repeat center center;
-		background-size: cover;
 		@include prefixer(transition-duration, 2s, webkit moz o ms spec);
 		}
 		.e3:hover .e3-drawing-top {opacity: 0;}
@@ -141,12 +146,9 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 /* e4 - live */ 
 .e4 {
-	position: relative;
-	height: $base * 15;
 	background: url('../img/e4-kat.jpg') no-repeat center center;
-	background-size: cover;
 	}
-	.e4:hover {background: url('../img/e4-jon.jpg') no-repeat center center; background-size: cover;}
+	.e4:hover {background: url('../img/e4-jon.jpg') no-repeat center center;}
 	.e4 .caption {position: absolute; right: 0;}
 	.e4 .play {position: absolute; z-index: 10; bottom: $base; left: 12%; width: 72%;}
 
@@ -154,10 +156,7 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 /* e5 - live */
 
 .e5 {
-	position: relative;
-	height: $base * 15;
 	background: url('../img/e5-liveB.jpg') no-repeat center center;
-	background-size: cover;
 	}
 	.e5 .caption {position: absolute; width: 20%; z-index: 150}
 	.e5 .play {position: absolute; z-index: 160; bottom: $base; left: $base; width: 40%;}
@@ -185,37 +184,77 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 		background-repeat: no-repeat;
     background-position: left center;
     background-size: 1000% 100%;  
-      
     }
     .e5:hover .zoom {opacity: 1; background-position: right center;}
 
 	.e5 .overlay {
 		z-index: 50;
 		background: url('../img/e5-liveA.jpg') no-repeat center center;
-		background-size: cover;
 		}
 		.e5:hover .overlay {opacity: 0;}
 
 
-/* e6 - teaser */
+/* e6 - live */
 
 .e6 {	
+	background: url('../img/e6-live.jpg') no-repeat center center;
 	position: relative;
-	height: $base * 15;
-	background: url('../img/e6-teaser.jpg') no-repeat center center;
-	background-size: cover;
 	}
-	.e6 .caption {position: absolute; width: 20%; z-index: 10}
-	.e6 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
-
-/* common */
-.panel:hover a.play {border-color: $color-paper;}
-.panel a.play:hover {background: $color-paper; color: $color-black;}
-
-		@include max-screen($phone)  { 
-			.index .caption {display: none;}
-			.index .panel {overflow: hidden;}
-			.index .play {width: 100% !important; left: 0; padding: 23px 0; border-radius: 0; top: 347px;}
-			.index .panel:hover .play {border-color: $color-black;}
+	.e6 .bubble,
+	.e6 .bubble:before,
+	.e6 .bubble:after {
+		border: $border;
+		background: $color-paper;
+		border-radius: 100%;	
+		}
+		.e6 .bubble {
+			position: absolute;
+			z-index: 1000;
+			padding: $base $base * 2;
+			width: 66px;
+			text-align: center;
+			top: 0;
+			right: 0;
+			opacity: 0;
+			@include prefixer(transition-duration, 0.5s, webkit moz o ms spec);
 			}
+			.e6:hover .bubble {
+				opacity: 1;
+				top: $base *-1;
+				right: $base * -1;
+				}
 
+				.e6 .bubble:before,
+				.e6 .bubble:after {
+					content: '';
+					display: block;
+					position: absolute;
+					}
+				.e6 .bubble:before {
+					padding: $base / 3;
+					left: $base * 3;
+					top: $base * 4.7;
+					}
+				.e6 .bubble:after {
+					padding: $base / 5;
+					left: $base * 2;
+					top: $base * 5.5;
+					}
+	
+	.e6 .play {position: absolute; z-index: 1; bottom: $base; left: $base; width: 40%;}
+
+
+
+/* e7 - teaser */
+.e7 {	
+	background: url('../img/e7-teaser.jpg') no-repeat center center;
+	position: relative;
+	}
+	.e7 .caption {position: relative; top: 60px; width: 50%;}
+	.e7 .play {position: absolute; z-index: 10; bottom: $base; left: 12%; width: 72%; margin: 0;}
+
+/* background size */ 
+.panel,
+.e2:hover,
+.e3-drawing-top,
+.e5 .overlay {background-size: cover;}
