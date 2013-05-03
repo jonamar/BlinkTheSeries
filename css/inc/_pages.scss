@@ -1,109 +1,106 @@
-// INDEX
-.index .wrapper,
-.week1 .wrapper,
-.week2 .wrapper,
-.week3 .wrapper,
-.week4 .wrapper,
-.week5 .wrapper {
-	background: url('../img/credits-bg-test2.jpg') no-repeat center center;
-	background-size: cover;
-	}
+// BACKGROUNDS
 
+	// Red	
+	.wrapper {background: $color-brand_two;}
 
-// CREDITS	
-.credits .wrapper {
-	background: $color-brand_two;
-}
-
-.credits .credits {color: $color-gray; box-shadow: none; cursor: default; pointer-events: none;}
-
-
+	// Clouds
+	.index .wrapper,
+	.week1 .wrapper,
+	.week2 .wrapper,
+	.week3 .wrapper,
+	.week4 .wrapper,
+	.week5 .wrapper {
+		background: url('../img/credits-bg-test2.jpg') no-repeat center center;
+		background-size: cover;
+		}
+	
+	
 
 // ARCHIVE
 
-/* Week 1 - e2: preview */
-
-.week1 .e2 {
-	height: $base * 15;
-	background: url('../img/e2-kat.jpg') no-repeat center left;
-	background-size: cover;
-	position: relative;
-	}
-
-.week1 .e2 .play {
-	width: 45%; margin: 23px;
-	padding: 12px 2% 11px;
- 	}
- 	
-.week1 .e2 .caption-1,
-.week1 .e2 .caption-2 {
-	position: absolute;
-	bottom: 0;
-	}
+	/* Week 1 - e2: preview */
 	
-.week1 .e2 .caption-1 {width: 30%;}
-.week1 .e2 .caption-2 {width: 40%; right: 0;}
-
-/* Week 2 - e3: preview */
-
-.week2 .e3 {
-	background: url('../img/e3-teaser.jpg') no-repeat center center;
-	background-size: cover;
-	position: relative;
-	}
-
-/* Week 3 - e4: preview */
-
-.week3 .e4 {
-	position: relative;
-	height: $base * 15;
-	background: url('../img/e4-teaser.jpg') no-repeat center center;
-	background-size: cover;
-	}
-	.week3 .e4 .play {
-		position: absolute; 
-		bottom: $base; 
-		margin: 0; 
-		left: 12%; 
-		width: 72%; 
-		color: $color-black; 
-		background: $color-paper; 
-		border-radius: 200px;
+	.week1 .e2 {
+		height: $base * 15;
+		background: url('../img/e2-kat.jpg') no-repeat center left;
+		background-size: cover;
+		position: relative;
 		}
-		.week3 .e4 .play:before,
-		.week3 .e4 .play:after {
-			content: '';
-			display: block; 
+	
+	.week1 .e2 .play {
+		width: 45%; margin: 23px;
+		padding: 12px 2% 11px;
+	 	}
+	 	
+	.week1 .e2 .caption-1,
+	.week1 .e2 .caption-2 {
+		position: absolute;
+		bottom: 0;
+		}
+		
+	.week1 .e2 .caption-1 {width: 30%;}
+	.week1 .e2 .caption-2 {width: 40%; right: 0;}
+	
+	/* Week 2 - e3: preview */
+	
+	.week2 .e3 {
+		background: url('../img/e3-teaser.jpg') no-repeat center center;
+		background-size: cover;
+		position: relative;
+		}
+	
+	/* Week 3 - e4: preview */
+	
+	.week3 .e4 {
+		position: relative;
+		height: $base * 15;
+		background: url('../img/e4-teaser.jpg') no-repeat center center;
+		background-size: cover;
+		}
+		.week3 .e4 .play {
 			position: absolute; 
-			border: $border; 
-			background: $color-paper;
-			border-radius: 100px;
+			bottom: $base; 
+			margin: 0; 
+			left: 12%; 
+			width: 72%; 
+			color: $color-black; 
+			background: $color-paper; 
+			border-radius: 200px;
 			}
-			.week3 .e4 .play:before {
-				width: $base; height: $base;
-				top: -5px;
-				right: -5px;
-				}
+			.week3 .e4 .play:before,
 			.week3 .e4 .play:after {
-				width: $base / 2; height: $base / 2;
-				top: -20px;
-				right: -10px;
+				content: '';
+				display: block; 
+				position: absolute; 
+				border: $border; 
+				background: $color-paper;
+				border-radius: 100px;
 				}
-
-/* Week 4 - e5: preview */
-.week4 .e5 {
-	background: url('../img/e5-teaser.jpg') no-repeat center center;
-	background-size: cover;
-	}
-	.week4 .e5 .caption {position: absolute; width: 20%; z-index: 10}
-	.week4 .e5 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
-
-
-/* Week 5 - e6: preview */
-.week5 .e6 {	
-	background: url('../img/e6-teaser.jpg') no-repeat center center;
-	background-size: cover;
-	}
-	.week5 .e6 .caption {position: absolute; width: 20%; z-index: 10}
-	.week5 .e6 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
+				.week3 .e4 .play:before {
+					width: $base; height: $base;
+					top: -5px;
+					right: -5px;
+					}
+				.week3 .e4 .play:after {
+					width: $base / 2; height: $base / 2;
+					top: -20px;
+					right: -10px;
+					}
+	
+	/* Week 4 - e5: preview */
+	.week4 .e5 {
+		background: url('../img/e5-teaser.jpg') no-repeat center center;
+		background-size: cover;
+		}
+		.week4 .e5 .caption {position: absolute; width: 20%; z-index: 10}
+		.week4 .e5 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
+	
+	
+	/* Week 5 - e6: preview */
+	.week5 .e6 {	
+		background: url('../img/e6-teaser.jpg') no-repeat center center;
+		background-size: cover;
+		}
+		.week5 .e6 .caption {position: absolute; width: 20%; z-index: 10}
+		.week5 .e6 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
 

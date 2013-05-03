@@ -8,7 +8,7 @@
 
 /* Mobile grid spans ----- */
 
-.m-all{width:100%;margin-left:0;clear:left;}
+.m-all{width:100%;margin-left:0;margin-right:0;clear:left;}
 
 /* Mobile grid padding ----- */
 
@@ -44,7 +44,7 @@
 
 /* Tablet grid spans ----- */
 
-.t1,.t2{width:48.33984375%;}.t-all{width:100%;margin-left:0;clear:left;}
+.t1,.t2{width:48.33984375%;}.t-all{width:100%;margin-left:0;margin-right:0;clear:left;}
 
 /* Tablet grid padding ----- */
 
@@ -80,7 +80,7 @@
 
 /* Left grid spans ----- */
 
-.l2{width:37.1355841%;}.l1{width:60.08663812%;}.l-all{width:100%;margin-left:0;clear:left;}
+.l2{width:37.1355841%;}.l1{width:60.08663812%;}.l-all{width:100%;margin-left:0;margin-right:0;clear:left;}
 
 /* Left grid padding ----- */
 
@@ -112,7 +112,7 @@
 
 /* Right grid spans ----- */
 
-.r1{width:37.1355841%;}.r2{width:60.08663812%;}.r-all{width:100%;margin-left:0;clear:left;}
+.r1{width:37.1355841%;}.r2{width:60.08663812%;}.r-all{width:100%;margin-left:0;margin-right:0;clear:left;}
 
 /* Right grid padding ----- */
 
@@ -144,7 +144,7 @@
 
 /* Grid grid spans ----- */
 
-.g1,.g2,.g3{width:31.48148148%;}.g1-g2 .g1,.g1-g2 .g2,.g2-g3 .g2,.g2-g3 .g3{width:47.88732394%;}.g1-g2,.g2-g3{width:65.74074074%;}.g-all{width:100%;margin-left:0;clear:left;}
+.g1,.g2,.g3{width:31.48148148%;}.g1-g2 .g1,.g1-g2 .g2,.g2-g3 .g2,.g2-g3 .g3{width:47.88732394%;}.g1-g2,.g2-g3{width:65.74074074%;}.g-all{width:100%;margin-left:0;margin-right:0;clear:left;}
 
 /* Grid grid padding ----- */
 
@@ -169,6 +169,38 @@
 /* Grid hiding ----- */
 
 .g-hide{display:none !important;}
+
+/* Half grid: 2 column / gutter: 2.77777778% ---------------------------------------- */
+
+[class*=" h1"],[class^=h1],[class*=" h2"],[class^=h2],.h-all{display:block;float:left;margin-right:-100%;}
+
+/* Half grid spans ----- */
+
+.h1,.h2{width:48.61111111%;}.h-all{width:100%;margin-left:0;margin-right:0;clear:left;}
+
+/* Half grid padding ----- */
+
+[class*=" h-pad"],[class^=h-pad]{padding-left:1.38888889%;padding-right:1.38888889%;left:-1.38888889%;}[class~=h-padfull],[class~=h-padinfull],[class~=h-padfull],[class~=h-padinfull]{padding-left:2.77777778%;padding-right:2.77777778%;left:-2.77777778%;}.h-pad,.h-padfull{position:relative;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}.h-padin[class~=h-padin],.h-padinfull[class~=h-padinfull]{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;left:0;}
+
+/* Half grid relationships ----- */
+
+[class*=" h2"],[class^=h2]{margin-left:51.38888889%;}
+.h1,[class*=h1-],.h-all,[class*=" h1-"],[class^=h1-],.h1,[class*=" h1-"] [class*=" h1-"],[class^=h1-] [class*=" h1-"],[class*=" h1-"] [class^=h1-],[class^=h1-] [class^=h1-],[class*=" h1-"] .h1,[class^=h1-] .h1,[class*=" h2-"] [class*=" h2-"],[class^=h2-] [class*=" h2-"],[class*=" h2-"] [class^=h2-],[class^=h2-] [class^=h2-],[class*=" h2-"] .h2,[class^=h2-] .h2{margin-left:0;clear:left;}
+
+/* Half grid floats ----- */
+
+[class*=" h-float"][class*=" h-float"],[class^=h-float][class^=h-float]{margin-left:2.77777778%;margin-right:2.77777778%;}
+.h-floatright[class~=h-floatright],.h-floatright[class~=h-floatright]+.h-floatright[class~=h-floatright]{float:right;margin-right:0;clear:right;}
+.h-floatleft[class~=h-floatleft]{float:left;margin-left:0;}
+
+/* Half clearing ----- */
+
+.h2+[class*=" h2"],.h2+[class^=h2],[class*=-h2]+[class*=" h2"],[class*=-h2]+[class^=h2],.h-clear{clear:left;}
+.h-overlap[class*=overlap]{clear:none;}
+
+/* Half hiding ----- */
+
+.h-hide{display:none !important;}
 
 }
 

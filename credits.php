@@ -57,7 +57,7 @@
 			<img alt="" src="img/people/malachi.jpg"/>
 			<div class="comic_caption border-top">
 				<h2>Malachi Rempen</h2>
-				<h4>Director: E3/56, Sound Assistant, Boom Operator, Pre-Edit</h4>
+				<h4>Director: E1/4/5/8, Sound Assistant, Boom Operator, Pre-Edit, E1 Guest Star: Lederhosen</h4>
 				<p>Malachi Rempen makes <a href="http://www.mmrempen.com">movies</a>, a weekly <a href="http://www.itchyfeetcomic.com">web comic</a>, and enjoys changes in temperature and color. Observant passers-by will notice him wandering around Berlin, deep in thought.</p>
 			</div>
 		</div>

@@ -1,0 +1,83 @@
+{
+  "name": "icons",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "glyphs": [
+    {
+      "search": [
+        "youtube"
+      ],
+      "code": 85,
+      "uid": "57a4f84c40a0c44d47387105f162a427",
+      "css": "youtube",
+      "orig_css": "youtube",
+      "orig_code": 85,
+      "src": "zocial",
+      "from": 85
+    },
+    {
+      "search": [
+        "mail",
+        "email"
+      ],
+      "code": 9993,
+      "from": 9993,
+      "uid": "wg849ixsobykxshs6efpc6fk4m0fq8bh",
+      "css": "mail",
+      "orig_css": "mail",
+      "orig_code": 9993,
+      "src": "typicons"
+    },
+    {
+      "search": [
+        "mail",
+        "email"
+      ],
+      "code": 59392,
+      "from": 9993,
+      "uid": "cba6018f5de17c76f70b7d2c06037e5a",
+      "css": "mail-1",
+      "orig_css": "mail",
+      "orig_code": 59392,
+      "src": "websymbols"
+    },
+    {
+      "search": [
+        "mail",
+        "email",
+        "envelope"
+      ],
+      "code": 57578,
+      "uid": "7cb7e246fd23672429db603c0077dc79",
+      "css": "mail-circled",
+      "orig_css": "mail-circled",
+      "orig_code": 57578,
+      "src": "elusive",
+      "from": 57578
+    },
+    {
+      "search": [
+        "twitter"
+      ],
+      "code": 62212,
+      "from": 62212,
+      "uid": "906348dc798a0d42715cc97c875e3ac6",
+      "css": "twitter-squared",
+      "orig_css": "twitter-squared",
+      "orig_code": 62212,
+      "src": "fontawesome"
+    },
+    {
+      "search": [
+        "facebook"
+      ],
+      "code": 62216,
+      "from": 62216,
+      "uid": "4743b088aa95d6f3b6b990e770d3b647",
+      "css": "facebook-squared",
+      "orig_css": "facebook-squared",
+      "orig_code": 62216,
+      "src": "fontawesome"
+    }
+  ]
+}

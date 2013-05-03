@@ -1,3 +1,8 @@
+<?php
+$title = basename($_SERVER['PHP_SELF'],'.php');
+$title = ucfirst($title); //capitalize
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -6,7 +11,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Blink The Series | Sci-Fi Web Series</title>
+        <title>Blink The Series<?php if($title!="Index"){echo " " . $title;}?> | Sci-Fi Web Series </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" type="image/png" href="/favicon.png">

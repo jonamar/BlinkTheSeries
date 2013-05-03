@@ -3,6 +3,7 @@ nav ul {
 	float: right; 
 	padding: 14px $base 9px 0; 
 	height: auto !important;
+	clear: right;
 	}
 	@include max-screen($tablet)  { nav ul {margin: $base auto; width: auto; float: none; text-align: center;} }
 
@@ -32,3 +33,10 @@ nav a {
 		
 nav [class^="icon-"]:before,
 nav [class*=" icon-"]:before {font-size: 32px;}
+
+
+// Active States
+.credits .credits,
+.index .home,
+.characters .characters,
+.on-set .on-set {color: $color-gray; box-shadow: none; cursor: default; pointer-events: none;}
