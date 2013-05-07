@@ -1,16 +1,5 @@
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
  		
-    <!--
-    <script src="js/jquery.fitvids.min.js"></script>       
-			<script>
-			  $(document).ready(function(){
-			    // Target your .container, .wrapper, .post, etc.
-			    $("#testDiv").fitVids();
-			  });
-			</script>
-			-->
-
-		
     <script src="js/compiled.js"></script>       
 
 			<!-- Fancy Box -->
@@ -35,6 +24,16 @@
 						});
 		
 				});
+				
+				$(document).ready(function() {
+
+					$('.e7').hover(
+						function(){ $('.overlay1').addClass('flash') },
+						function(){ $('.overlay1').removeClass('flash') }
+					);
+					
+				});
+
 			</script>
 
     <script>

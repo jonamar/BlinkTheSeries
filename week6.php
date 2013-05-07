@@ -40,9 +40,8 @@
 	</div>
 
 	<div class="l2 t-all m1 e7 panel">
-			<a class='play fancybox-media' href="#">&#9658; Watch Episode 7</a>
-			<div class="overlay1"></div>
-			<div class="overlay2"></div>
+			<p class="caption caption-1">From resignation to revelations, next week on <span class="type-logo"> Blink The Series</span>.</p>
+			<p class="play"><small>Watch Episode Seven</small> NEXT WEDNESDAY <small>May 8th</small></p>
 	</div>
 
 <?php include 'inc/_corpus.pes.php' ?>

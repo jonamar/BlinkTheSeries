@@ -9,7 +9,9 @@
 	.week2 .wrapper,
 	.week3 .wrapper,
 	.week4 .wrapper,
-	.week5 .wrapper {
+	.week5 .wrapper,
+	.week6 .wrapper,
+	.week7 .wrapper {
 		background: url('../img/credits-bg-test2.jpg') no-repeat center center;
 		background-size: cover;
 		}
@@ -18,15 +20,13 @@
 
 // ARCHIVE
 
-	/* Week 1 - e2: preview */
+	/* Week 1 - e2: teaser */
 	
 	.week1 .e2 {
-		height: $base * 15;
 		background: url('../img/e2-kat.jpg') no-repeat center left;
 		background-size: cover;
-		position: relative;
 		}
-	
+ 	
 	.week1 .e2 .play {
 		width: 45%; margin: 23px;
 		padding: 12px 2% 11px;
@@ -41,19 +41,16 @@
 	.week1 .e2 .caption-1 {width: 30%;}
 	.week1 .e2 .caption-2 {width: 40%; right: 0;}
 	
-	/* Week 2 - e3: preview */
+	/* Week 2 - e3: teaser */
 	
 	.week2 .e3 {
 		background: url('../img/e3-teaser.jpg') no-repeat center center;
 		background-size: cover;
-		position: relative;
 		}
 	
-	/* Week 3 - e4: preview */
+	/* Week 3 - e4: teaser */
 	
 	.week3 .e4 {
-		position: relative;
-		height: $base * 15;
 		background: url('../img/e4-teaser.jpg') no-repeat center center;
 		background-size: cover;
 		}
@@ -87,7 +84,7 @@
 					right: -10px;
 					}
 	
-	/* Week 4 - e5: preview */
+	/* Week 4 - e5: teaser */
 	.week4 .e5 {
 		background: url('../img/e5-teaser.jpg') no-repeat center center;
 		background-size: cover;
@@ -96,11 +93,19 @@
 		.week4 .e5 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
 	
 	
-	/* Week 5 - e6: preview */
+	/* Week 5 - e6: teaser */
 	.week5 .e6 {	
 		background: url('../img/e6-teaser.jpg') no-repeat center center;
 		background-size: cover;
 		}
 		.week5 .e6 .caption {position: absolute; width: 20%; z-index: 10}
 		.week5 .e6 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
+
+	/* week 6 -  e7: teaser */
+	.e7 {	
+		background: url('../img/e7-teaser.jpg') no-repeat center center;
+		}		
+		.e7 .caption {position: relative; top: 60px; width: 50%;}
+		.e7 .play {position: absolute; z-index: 10; bottom: $base; left: 12%; width: 72%; margin: 0;}
+
 
