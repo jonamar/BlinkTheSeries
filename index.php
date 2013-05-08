@@ -45,5 +45,11 @@
 			<div class="overlay2"></div>
 	</div>
 
+	<div class="g-all t-all m1 e8 panel">
+			<p class="caption caption-1">Say it ain't so! Only one more episode in Season 1?!</p>
+			<p class="caption caption-2">Tune in next week to find out how it all ends (for now) on <span class="type-logo"> Blink The Series</span>!!!</p>
+			<p class="play"><small>Watch Episode 8</small> NEXT WEDNESDAY <small>May 15th</small></p>
+	</div>
+
 <?php include 'inc/_corpus.pes.php' ?>
 <?php include 'inc/_atrio.pes.php' ?>

@@ -277,6 +277,18 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 				
 				.e7:hover .play,				
 				.e7 .play:hover {border-color: $color-black !important;}
+
+
+/* e8 - teaser */
+.e8 {	
+	background: url('../img/e8-teaser.jpg') no-repeat center center;
+	}
+	.e8 .caption,
+	.e8 .play {margin: $base auto;}
+	
+		.e8 .caption-1 {width: 42%;}
+		.e8 .caption-2 {width: 35%;}
+		.e8 .play {width: 25%}
   
 /* background size */ 
 .panel,
