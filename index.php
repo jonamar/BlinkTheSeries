@@ -40,7 +40,7 @@
 	</div>
 
 	<div class="l2 t-all m1 e7 panel">
-			<a class='play fancybox-media' href="#">&#9658; Watch Episode 7</a>
+			<a class='play fancybox-media' href="http://www.youtube.com/watch?v=cFwtfKqn93g">&#9658; Watch Episode 7</a>
 			<div class="overlay1"></div>
 			<div class="overlay2"></div>
 	</div>
