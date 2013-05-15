@@ -52,7 +52,7 @@
 			<div class="ledge"></div>
 			<div class="shoes wobble animated"></div>
 
-			<a class='play fancybox-media' href="#">&#9658; Watch Episode 8</a>
+			<a class='play fancybox-media' href="http://www.youtube.com/watch?v=sAxoXyGv6_k">&#9658; Watch Episode 8</a>
 	</div>
 
 <?php include 'inc/_corpus.pes.php' ?>
