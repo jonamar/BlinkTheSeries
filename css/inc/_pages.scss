@@ -102,10 +102,22 @@
 		.week5 .e6 .play {position: absolute; z-index: 1; bottom: 0; left: 22%; width: 40%;}
 
 	/* week 6 -  e7: teaser */
-	.e7 {	
+	.week6 .e7 {	
 		background: url('../img/e7-teaser.jpg') no-repeat center center;
 		}		
-		.e7 .caption {position: relative; top: 60px; width: 50%;}
-		.e7 .play {position: absolute; z-index: 10; bottom: $base; left: 12%; width: 72%; margin: 0;}
+		.week6 .e7 .caption {position: relative; top: 60px; width: 50%;}
+		.week6 .e7 .play {position: absolute; z-index: 10; bottom: $base; left: 12%; width: 72%; margin: 0;}
+
+
+	/* week 7 -  e8: teaser */
+	.week7 .e8 {	
+		background: url('../img/e8-teaser.jpg') no-repeat center center;
+		}
+		.week7 .e8 .caption,
+		.week7 .e8 .play {margin: $base auto;}
+		
+			.week7 .e8 .caption-1 {width: 42%;}
+			.week7 .e8 .caption-2 {width: 35%;}
+			.week7 .e8 .play {width: 25%}
 
 

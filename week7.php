@@ -46,13 +46,9 @@
 	</div>
 
 	<div class="g-all t-all m1 e8 panel">
-			<p class="caption caption-1">Just jump Jon!</p> 
-			
-			<div class="dirt"></div>
-			<div class="ledge"></div>
-			<div class="shoes wobble animated"></div>
-
-			<a class='play fancybox-media' href="#">&#9658; Watch Episode 8</a>
+			<p class="caption caption-1">Say it ain't so! Only one more episode in Season 1?!</p>
+			<p class="caption caption-2">Tune in next week to find out how it all ends (for now) on <span class="type-logo"> Blink The Series</span>!!!</p>
+			<p class="play"><small>Watch Episode 8</small> NEXT WEDNESDAY <small>May 15th</small></p>
 	</div>
 
 <?php include 'inc/_corpus.pes.php' ?>

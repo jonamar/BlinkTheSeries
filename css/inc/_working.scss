@@ -27,8 +27,6 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 
 	
 
-		
-
 // helpers
 	.border-top 		{border-top: 		$border;}
 	.border-right 	{border-right: 	$border;}
@@ -254,7 +252,7 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 	.e7 .caption {position: relative; top: 60px; width: 50%;}
 	.e7 .play {position: absolute; z-index: 10; bottom: $base; left: 12%; width: 72%; margin: 0;}
 
-		.overlay1 {	
+		.e7 .overlay1 {	
 			background: url('../img/e7-live-overlay1.jpg') no-repeat center center;
 			position: relative;	
 			background-size: cover;
@@ -264,7 +262,7 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 			}
 			.e7:hover .overlay1 {opacity: 1;}
 			
-			.overlay2 {
+			.e7 .overlay2 {
 				position: absolute;
 				top: 0; left: 0; right: 0; bottom: 0;
 				background: #fff; 
@@ -279,19 +277,59 @@ body {background: url('../img/bg/deepwoodtile.jpg') repeat top left;}
 				.e7 .play:hover {border-color: $color-black !important;}
 
 
-/* e8 - teaser */
-.e8 {	
-	background: url('../img/e8-teaser.jpg') no-repeat center center;
+/* e8 - live */
+.e8 {
+	overflow: hidden;
+	background: url('../img/e8-live-dirt.jpg') no-repeat center center;
 	}
-	.e8 .caption,
-	.e8 .play {margin: $base auto;}
+	.e8 .caption {margin: $base; position: relative; z-index: 10000; width: 13%; float: right; }
 	
-		.e8 .caption-1 {width: 42%;}
-		.e8 .caption-2 {width: 35%;}
-		.e8 .play {width: 25%}
-  
+	.e8 .play {
+		position: absolute;
+		z-index: 1; 
+		bottom: $base * 2; 
+		left: 37.5%; 
+		width: 25%;
+		}
+	
+	.e8 .shoes, 
+	.e8 .ledge,
+	.e8 .dirt {
+		position: absolute; 
+		width: 100%; height: 100%;
+		top: 0; left: 0; right: 0; bottom: 0;
+		}
+
+	.e8 .shoes {
+		background: url('../img/e8-live-shoes.png') no-repeat center $base * 2;
+		@include prefixer(transition-duration, .25s, webkit moz o ms spec);	
+		}
+		.e8:hover .shoes {
+			background: url('../img/e8-live-shoes.png') no-repeat $base * -1 $base * 5;
+			}
+			
+	.e8 .ledge {background: url('../img/e8-live-ledge.png') no-repeat center center;}
+	.e8 .dirt {
+		background: url('../img/e8-live-dirt.jpg') no-repeat center center;
+
+		@include prefixer(transition-duration, 1.5s, webkit moz o ms spec);
+		width: 102%; height: 102%;
+		left: -1%; top: -1%; 
+		-webkit-backface-visibility: hidden;
+		}
+		.e8:hover .dirt {
+			width: 130%; height: 130%;
+			left: -15%; top: -15%;
+			-webkit-backface-visibility: hidden;
+			}
+
+
+	  
 /* background size */ 
 .panel,
 .e2:hover,
 .e3-drawing-top,
-.e5 .overlay {background-size: cover;}
+.e5 .overlay,
+.e8 .shoes, 
+.e8 .ledge,
+.e8 .dirt {background-size: cover;}
